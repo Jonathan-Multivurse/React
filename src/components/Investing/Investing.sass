@@ -1,0 +1,116 @@
+body
+  background: #F6F8FF
+
+.investing
+  &-container
+    background: #F6F8FF
+    height: 100%
+    width: 100%
+    display: grid
+    justify-content: center
+    @media(max-width: 575px)
+      padding: 30px 5px
+    @media(min-width: 576px)
+      padding: 50px 0px
+    @media(min-width: 768px)
+      padding: 156px 0px
+    @media(min-width: 1920px)
+      padding: 234px 0px
+
+    &__first-row     
+      display: flex
+      justify-content: center
+       
+
+  &__title
+    color: #2E2E2E
+    font-size: 22px
+    @media(min-width: 1920px)
+      font-size: 33px
+
+    &-col
+      @media(max-width: 575px)
+        display: flex
+        justify-content: space-between
+        align-items: center
+        width: 250px
+      @media(min-width: 576px) 
+        display: flex
+        justify-content: space-between
+        align-items: center
+        width: 506px
+      @media(min-width: 768px)
+        margin-bottom: 20px
+        padding: 0
+      @media(min-width: 1920px)
+        margin-bottom: 30px
+
+
+  &__notify
+    display: grid
+    justify-items: center
+
+    &-title
+      color: #2E2E2E
+      font-size: 15px
+      font-family: "NanumSquareRegular"
+      @media(min-width: 1920px)
+        font-size: 22px
+
+      &-hover
+        color: #3769FC
+
+  &__bell
+    width: 31px
+    height: 29px
+    margin-bottom: 2px
+    &-hover
+      transform: rotate(-45deg)
+      transition: 0.1s
+
+    @media(min-width: 1920px)
+      width: 46px
+      height: 43px
+
+  &__row
+    margin: 20px 0px 20px 0px
+    justify-content: space-between
+    @media(max-width: 575px)
+      justify-content: center
+      width: 300px
+    @media(min-width: 992px)
+      width: 100%
+      
+    &-container
+      @media(min-width: 576px)
+        display: flex
+        justify-content: center
+        width: 509px
+      @media(min-width: 992px)
+        width: 815px
+      @media(min-width: 1920px)
+        width: 1326px
+      
+    a
+      &:hover
+        text-decoration: none
+
+  &__info
+    height: 76px
+    width: 100%
+    text-align: center
+    color: #FFFFFF
+    background: #3182F5
+    margin-top: 5px
+    font-size: 12px
+    align-items: center
+    display: flex
+    padding: 17px 34px
+    @media(min-width: 1920px)
+      height: 114px
+      margin-top: 7px
+      font-size: 18px
+
+  &__info-hover
+    background: transparent linear-gradient(117deg, #1CA9E9 0%, #1AA4E7 9%, #0154C8 100%)
+

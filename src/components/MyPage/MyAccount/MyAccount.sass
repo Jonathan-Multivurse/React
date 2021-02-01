@@ -1,0 +1,234 @@
+.my-account
+  &-container
+    @media(min-width: 576px)
+      margin-left: 15px
+    @media(min-width: 1920px)
+      margin-left: 85px
+
+  &-box
+    width: 680px
+    height: 100%
+    background: #FFFFFF
+    box-shadow: 0px 7px 20px #0F143129
+    padding: 4% 7%
+    @media(min-width: 992px)
+      margin-left: 0px
+    @media(min-width: 1920px)
+      width: 1011px
+
+  &-header
+    border-bottom: 1px solid #7A7A7A  
+    padding-bottom: 3%
+
+  &__mobile-invisible
+    @media(max-width: 575px)
+      display: none
+
+.header
+
+  &-title
+    color: #555555
+    font-size: 15px
+    font-family: "NanumSquareRegular"
+    @media(min-width: 1920px)
+      font-size: 22px
+
+  &-subtitle
+    color: #7A7A7A
+    font-size: 12px
+    font-family: "NanumSquareRegular"
+    @media(min-width: 1920px)
+      font-size: 18px
+
+.bank
+  &-picture
+    width: 10px
+    height: 10px
+    margin: 0px 5px 0px 0px
+    @media(min-width: 1920px)
+      width: 15px
+      height: 15px
+      margin: 0px 7px 0px 0px      
+
+.sum
+  color: #3769FC
+  font-size: 22px
+  display: flex
+  justify-content: flex-end
+  align-items: center
+  @media(min-width: 1920px)
+    font-size: 33px
+
+  &-mobile
+    display: none
+    @media(max-width: 575px)
+      display: block
+      text-align: left
+      color: #3769FC
+      font-size: 22px
+      margin-top: 4px
+
+.account-info
+  border-bottom: 1px solid #7A7A7A  
+  padding-bottom: 3%
+  padding-top: 3%
+  &:last-child
+    border-bottom: 0px 
+
+  &-title
+    color: #555555
+    font-size: 14px
+    @media(min-width: 1920px)
+      font-size: 21px
+
+  &-input
+    width: 100%
+    height: 28px
+    background: #FAFBFE
+    border: 1px solid #7A7A7A
+    border-radius: 2px
+    margin-bottom: 8px
+    opacity: 0.4
+    padding-left: 14px
+    color: #525252
+    font-size: 11px
+    font-family: "NanumSquareRegular"
+    @media(min-width: 576px)
+      max-width: 245px
+    @media(min-width: 1920px)
+      height: 42px
+      border-radius: 3px
+      margin-bottom: 12px
+      padding-left: 21px
+      font-size: 16px
+      margin-right: 5px
+
+.icon-input-container
+  position: relative
+  input
+    padding-left: 25px
+    @media(min-width: 1920px)
+      padding-left: 37px
+
+.icon
+  position: absolute
+  top: 8px
+  left: 14px
+  height: 10px
+  @media(min-width: 1920px)
+    top: 12px
+    left: 21px
+    height: 15px
+
+.input-button-container
+  width: 100%
+  input
+    width: 72%
+
+  button
+    width: 76px
+    height: 28px
+    background: #FFFFFF 0% 0%
+    border: 1px solid #3769FC
+    border-radius: 2px
+    opacity: 0.83
+    color: #3769FC
+    font-size: 11px
+    margin-left: 5px
+    @media(min-width: 1920px)
+      width: 114px
+      height: 42px
+      border-radius: 3px
+      font-size: 16px
+      margin-left: 0px
+
+.amount-input
+  width: 120px
+  height: 28px
+  background: #FAFBFE
+  border: 1px solid #7A7A7A
+  border-radius: 2px
+  margin-bottom: 8px
+  opacity: 0.4
+  padding-left: 14px
+  color: #525252
+  font-size: 11px
+  font-family: "NanumSquareRegular"
+  @media(max-width: 575px)
+    width: 100%
+  @media(min-width: 1920px)
+    width: 180px
+    height: 42px
+    border-radius: 3px
+    margin-bottom: 12px
+    padding-left: 21px
+    font-size: 16px
+
+.input-button-container-last
+  width: 100%
+
+.whole
+  width: 49px
+  height: 28px
+  background: #FFFFFF 0% 0%
+  border: 1px solid #3769FC
+  border-radius: 2px
+  opacity: 0.83
+  color: #3769FC
+  font-size: 11px
+  margin-left: 5px
+  @media(max-width: 575px)
+    margin-left: 0px
+    width: 50%
+  @media(min-width: 1920px)
+    width: 73px
+    height: 42px
+    border-radius: 3px
+    font-size: 16px
+    margin-left: 7px
+
+.withdrawal
+  color: #FFFFFF
+  font-size: 11px
+  width: 67px
+  height: 28px
+  background: #3769FC
+  border-radius: 2px
+  border: none
+  opacity: 0.83
+  margin-left: 5px
+  @media(max-width: 575px)
+    width: 48%
+  @media(min-width: 1920px)
+    font-size: 16px
+    width: 100px
+    height: 42px
+    border-radius: 3px
+    margin-left: 7px
+
+.text
+  color: #7A7A7A
+  font-size: 12px
+  font-family: "NanumSquareRegular"
+  margin-bottom: 3px
+  &-align
+    text-align: center
+    @media(max-width: 575px)
+      text-align: inherit
+      margin-left: 10px
+    @media(min-width: 1920px)
+      margin-left: 15px
+      text-align: inherit
+
+.account
+  &-row
+    margin-top: 38px
+    @media(min-width: 1920px)
+      margin-top: 57px
+
+  &-column
+    display: flex
+    justify-content: center
+    @media(max-width: 575px)
+      display: none
+

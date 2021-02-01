@@ -1,0 +1,250 @@
+.asset-overview
+  &__container
+    width: 100%
+    height: 100%
+    background-color: #fafbfe
+    @media(max-width: 575px)
+      padding: 32px 14px
+    @media(min-width: 576px)
+      padding: 50px 30px
+      display: flex
+      justify-content: center
+    @media(min-width: 992px)
+      padding: 70px 0px 110px 0px
+    @media(min-width: 1200px)
+      padding: 70px 0px 110px 0px
+
+    &-title
+      color: #555555
+      font-size: 35px
+      margin-left: 19px
+      margin-bottom: 39px
+      @media(max-width: 767px)
+        font-size: 15px
+        margin-left: 0px
+        margin-bottom: 19px
+      @media(min-width: 1920px)
+        font-size: 52px
+        margin-left: 0px
+        margin-bottom: 58px
+
+    &-block
+      @media(min-width: 768px)
+        width: 770px
+        display: grid
+        justify-content: center
+      @media(min-width: 1920px)
+        width: 1155px
+
+  &__row
+    @media(max-width: 767px)
+      display: flex
+      justify-items: center
+    @media(min-width: 768px)
+      display: flex
+      justify-content: center
+      width: 100%
+
+    &_div
+      @media(max-width: 767px)
+        display: grid
+        justify-items: center
+      @media(min-width: 768px)
+        display: flex
+        justify-content: space-between
+        width: 100%
+      @media(min-width: 992px)
+        width: 770px
+      @media(min-width: 1920px)
+        width: 1155px
+
+    &_carousel
+      @media(max-width: 575px)
+        padding: 0
+      @media(min-width: 768px)
+        padding: 0
+
+  &__picture
+    width: 100%
+    background-size: cover
+    @media(max-width: 575px)
+      height: 276px
+      width: 340px
+    @media(min-width: 576px)
+      height: 279px
+      width: 372px
+    @media(min-width: 1920px)
+      width: 602px
+      height: 438px
+
+  &__dots
+    display: flex
+    justify-content: center
+    margin-top: 15px
+    @media(min-width: 1920px)
+      margin-top: 22px
+  &__arrows
+    display: flex
+    justify-content: space-between
+    position: relative
+    bottom: 190px
+    margin: 0px 0px
+    @media(max-width: 575px)
+      bottom: 190px
+    @media(min-width: 1920px)
+      bottom: 285px
+
+  &__arrow
+    border: none !important
+    background: none !important
+
+  &__icon
+    color: #e5e5e5
+    @media(min-width: 1920px)
+
+  &__slider
+    height: 269px
+    box-shadow: 0px 10px 36px #0f143129
+    @media(max-width: 575px)
+      width: 339px
+    @media(min-width: 576px)
+      height: 279px
+      width: 372px
+    @media(min-width: 1920px)
+      width: 602px
+      height: 438px
+
+  &__slide
+    position: unset
+    display: flex
+    justify-content: center
+    @media(max-width: 767px)
+      position: relative
+    @media(min-width: 992px)
+      position: relative
+
+  &__info
+    @media(max-width: 767px)
+      padding: 0
+      margin-top: 62px
+    @media(min-width: 768px)
+      padding: 0px
+      // width: 301px
+    @media(min-width: 992px)
+      width: 301px
+      padding: 0
+
+  &__title
+    color: #555555
+    border-bottom: 2px solid #707070
+    margin-bottom: 24px
+    @media(max-width: 767px)
+      font-size: 15px
+      padding-bottom: 10px
+    @media(min-width: 768px)
+      font-size: 18px
+    @media(min-width: 992px)
+      font-size: 19px
+    @media(min-width: 1200px)
+      font-size: 20px
+    @media(min-width: 1920px)
+      font-size: 30px
+      margin-bottom: 36px
+
+  &__subtitles
+    border-bottom: 1px solid #70707075
+    display: flex
+    align-items: center
+    margin-bottom: 14px
+    padding-bottom: 4px
+    @media(max-width: 767px)
+      padding-bottom: 17px
+    @media(min-width: 1920px)
+      margin-bottom: 21px
+      padding-bottom: 6px
+
+  &__name
+    color: #555555
+    @media(max-width: 767px)
+      width: 34%
+      display: grid
+      justify-content: center
+      font-size: 13px
+    @media(min-width: 768px)
+      font-size: 13px
+    @media(min-width: 992px)
+      font-size: 15px
+    @media(min-width: 1200px)
+      font-size: 18px
+    @media(min-width: 1920px)
+      font-size: 27px
+
+    &-first
+      // width: 40px
+      @media(max-width: 767px)
+        display: grid
+        justify-content: center
+      @media(min-width: 992px)
+        width: 61px
+      @media(min-width: 1920px)
+        width: 91px
+
+  &__definition
+    color: #555555
+    font-family: "NanumSquareRegular"
+    margin-left: 30px
+    @media(max-width: 767px)
+      font-size: 13px
+    @media(min-width: 992px)
+      font-size: 14px
+    @media(min-width: 1200px)
+      font-size: 16px
+    @media(min-width: 1920px)
+      font-size: 24px
+      margin-left: 45px
+
+    &-last
+      margin-left: 10px
+      color: #555555
+      font-family: "NanumSquareRegular"
+      @media(max-width: 767px)
+        margin-left: 26px
+        font-size: 13px
+      @media(min-width: 768px)
+        font-size: 12px
+      @media(min-width: 992px)
+        font-size: 16px
+      @media(min-width: 1920px)
+        font-size: 24px
+        margin-left: 15px
+
+  &-margin-30
+    @media(max-width: 767px)
+      width: 61%
+    @media(min-width: 768px)
+      margin-left: 32px
+    @media(min-width: 1920px)
+      margin-left: 48px
+
+  &-margin-25
+    @media(max-width: 767px)
+      margin-left: 29px
+    @media(min-width: 768px)
+      margin-left: 25px
+    @media(min-width: 1920px)
+      margin-left: 37px
+
+  &-margin-35
+    margin-left: 35px
+    @media(max-width: 767px)
+      margin-left: 27px
+    @media(min-width: 768px)
+      margin-left: 38px
+    @media(min-width: 1920px)
+      margin-left: 57px
+
+  &__carousel
+    display: flex
+    justify-content: center
+    @media(min-width: 768px)
+      justify-content: flex-start

@@ -1,0 +1,48 @@
+.mypage
+  ::-webkit-scrollbar
+    height: 2px
+  ::-webkit-scrollbar-track
+    background: #cedaff
+  ::-webkit-scrollbar-thumb 
+    background: #3182f5 
+
+  @media(max-width: 575px)
+    padding: 0px  
+    display: block
+    width: 100%
+  @media(min-width: 576px)
+    padding: 40px 0px
+    display: flex
+    justify-content: center
+  @media(min-width: 768px)
+    padding: 57px 0px
+    margin-top: 70px
+    width: 770px
+  @media(min-width: 1200px)
+    padding: 89px 0px
+  @media(min-width: 1920px)
+    padding: 133px 0px
+    width: 1326px
+
+  &-container
+    width: 100%
+    display: flex
+    justify-content: center
+
+  &__second-column
+    display: contents
+    @media(min-width: 768px)
+      display: contents
+
+.visible-for-desktop
+  display: block
+  max-width: 127px
+  @media(max-width: 575px)
+    display: none
+
+.visible-for-mobile
+  display: none
+  @media(max-width: 575px)
+    display: contents
+
+

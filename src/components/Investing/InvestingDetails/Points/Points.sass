@@ -1,0 +1,94 @@
+.points
+  &-container
+    display: flex
+    @media(max-width: 575px)
+      padding: 51px 10px 66px 10px
+      justify-content: center
+    @media(min-width: 576px)
+      padding: 51px 10px 66px 10px
+      justify-content: center
+    @media(min-width: 992px)
+      padding: 66px 0px 82px 0px
+    @media(min-width: 1920px)
+      padding: 99px 0px 123px 0px
+
+  &__block
+    @media(min-width: 576px)
+      display: contents
+    @media(min-width: 768px)
+      width: 770px
+      display: flex
+      justify-content: center
+    @media(min-width: 1920px)
+      width: 1155px
+
+  &-col
+    max-width: 236px
+    height: 279px
+    background: #FFFFFF
+    box-shadow: 0px 10px 36px #0F143129
+    padding: 20px
+    margin: 10px
+    @media(max-width: 575px)
+      margin-bottom: 20px
+    @media(min-width: 493px)
+      &:nth-child(even)
+        margin-left: 10px
+    @media(min-width: 576px)
+      margin-bottom: 20px
+    @media(min-width: 1920px)
+      max-width: 354px
+      height: 418px
+      padding: 30px
+      margin: 15px
+      margin-bottom: 30px
+
+    &__number
+      color: #7A7A7A
+      font-size: 18px
+      font-family: "JavaneseText"
+      text-align: center
+      @media(min-width: 1920px)
+        font-size: 27px
+
+    &__title
+      color: #2E2E2E
+      font-size: 17px
+      padding-bottom: 5px
+      text-align: center
+      @media(min-width: 1920px)
+        font-size: 25px
+        padding-bottom: 8px
+
+    &__subtitle
+      color: #555555
+      font-size: 12px
+      font-family: "NanumSquareRegular"
+      @media(min-width: 1920px)
+        font-size: 18px
+      &-first
+        margin-top: 24px
+        color: #555555
+        font-size: 12px
+        font-family: "NanumSquareRegular"
+        @media(min-width: 1920px)
+          font-size: 18px
+          margin-top: 36px
+
+    &__comment
+      color: #555555
+      font-size: 11px
+      font-family: "NanumSquareRegular"
+      margin-bottom: 20px
+      margin-left: 10px
+      @media(min-width: 1920px)
+        font-size: 16px
+        margin-bottom: 30px
+        margin-left: 15px
+
+  &__divider
+    border-bottom: 1px solid #7A7A7A
+    display: flex
+    margin: 0px 14px
+    @media(min-width: 1920px)
+      margin: 0px 21px

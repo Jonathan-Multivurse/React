@@ -1,0 +1,765 @@
+.main
+  &__container
+    width: 100%
+    height: 100%
+    background: white
+
+  &__image
+    width: 100%
+
+  &__to-buy-first
+    @media(max-width: 767px)
+      display: none
+    @media(min-width: 768px)
+      position: absolute
+      top: 230px
+      width: 9%
+      left: 30%
+    @media(min-width: 992px)
+      top: 290px
+    @media(min-width: 1200px)
+      top: 354px
+    @media(min-width: 1920px)
+      top: 567px
+    @media(min-width: 2400px)
+      top: 708px
+    @media(min-width: 3050px)
+      top: 904px
+
+  &__to-buy-second
+    @media(max-width: 767px)
+      display: none
+    @media(min-width: 768px)
+      position: absolute
+      top: 271px
+      width: 9%
+      left: 56%
+    @media(min-width: 992px)
+      top: 337px
+    @media(min-width: 1200px)
+      top: 410px
+    @media(min-width: 1920px)
+      top: 655px
+    @media(min-width: 2400px)
+      top: 820px
+    @media(min-width: 3040px)
+      top: 1039px
+
+  &__to-buy-third
+    @media(max-width: 767px)
+      display: none
+    @media(min-width: 768px)
+      position: absolute
+      top: 296px
+      left: 70%
+      width: 9%
+    @media(min-width: 930px)
+      top: 366px
+    @media(min-width: 1200px)
+      top: 444px
+    @media(min-width: 1920px)
+      top: 713px
+    @media(min-width: 2400px)
+      top: 890px
+    @media(min-width: 3050px)
+      top: 1131px
+
+  &__titles-block
+    position: absolute
+    justify-content: center
+    @media(max-width: 575px)
+      top: 92px
+    @media(min-width: 768px)
+      top: 110px
+    @media(min-width: 992px)
+      top: 197px
+    @media(min-width: 1920px)
+      top: 300px
+
+  &__titles-centered
+    display: flex
+    justify-content: center
+
+  &__title
+    font-size: 29px
+    line-height: 1.1
+    text-align: center
+    color: #ffffff
+    @media(max-width: 575px)
+      font-size: 17px
+    @media(min-width: 1920px)
+      font-size: 43px
+
+  &__subtitle
+    margin-top: 22px
+    font-family: "NanumSquareRegular"
+    font-size: 15px
+    line-height: 1.6
+    text-align: center
+    color: #ffffff
+    @media(max-width: 575px)
+      margin-top: 20px
+      font-size: 13px
+    @media(min-width: 1920px)
+      font-size: 22px
+      margin-top: 33px
+
+  &__offers
+    display: flex
+    justify-content: center
+    ::-webkit-scrollbar
+      height: 2px
+    ::-webkit-scrollbar-track
+      background: #cedaff
+    ::-webkit-scrollbar-thumb
+      background: #3182f5
+    @media(min-width: 576px)
+      padding: 0px 15px
+
+.why-real-buy
+  width: 100%
+  height: 100%
+  background: #FAFBFE
+  box-shadow: inset 0px 10px 36px #0F143129
+  display: grid
+  justify-items: center
+  @media(max-width: 575px)
+    padding: 30px 10px
+    box-shadow: none
+  @media(min-width: 576px)
+    padding: 60px 10px
+  @media(min-width: 768px)
+    padding: 70px 0px
+  @media(min-width: 992px)
+    padding: 90px 0px 86px 0px
+  @media(min-width: 1200px)
+    padding: 95px 0px
+  @media(min-width: 1920px)
+    padding: 142px 0px
+
+  div
+    @media(min-width: 576px)
+      display: flex
+    @media(min-width: 768px)
+      width: 574px
+      justify-content: center
+    @media(min-width: 992px)
+      width: 861px
+
+  span
+    height: 137px
+    border-right: solid 1px #bebebe
+    margin-top: 44px
+    @media(max-width: 575px)
+      display: none
+
+  &__title
+    color: #0540FF
+    font-size: 15px
+    font-family: "NanumSquareRegular"
+    text-align: center
+    margin-bottom: 13px
+    @media(max-width: 575px)
+      display: none
+    @media(min-width: 1920px)
+      font-size: 22px
+
+  &__subtitle
+    color: #2E2E2E
+    font-size: 25px
+    text-align: center
+    margin-bottom: 33px
+    @media(max-width: 575px)
+      display: none
+    @media(min-width: 1920px)
+      font-size: 37px
+
+  &__mobile
+    &-title
+      color: #2a2a2a
+      font-size: 15px
+      text-align: center
+      @media(min-width: 576px)
+        display: none
+
+    &-block
+      display: grid !important
+      justify-items: center
+      padding: 27px
+      border-bottom: solid 1px #bebebe
+      height: 220px
+      &:last-child
+        border-bottom: none
+      @media(min-width: 576px)
+        border-bottom: none
+      @media(min-width: 1920px)
+        height: 274px
+
+      &-pic
+        margin-bottom: 13px
+        @media(min-width: 1920px)
+          width: 117px
+          margin-bottom: 19px
+
+      &-title
+        color: #555555
+        font-size: 12px
+        text-align: center
+        margin-bottom: 12px
+        @media(min-width: 576px)
+          color: #0540FF
+          font-size: 16px
+          margin-bottom: 0
+        @media(min-width: 1920px)
+          font-size: 24px
+          margin-bottom: 15px
+
+      &-subtitle
+        font-family: "NanumSquareRegular"
+        color: #555555
+        font-size: 12px
+        text-align: center
+        @media(min-width: 576px)
+          color: #0540FF
+        @media(min-width: 1920px)
+          font-size: 18px
+
+.how-to
+  width: 100%
+  height: 100%
+  background: white
+  padding: 78px 262px
+  @media(max-width: 575px)
+    padding: 20px
+  @media(min-width: 576px)
+    padding: 30px 0px
+    display: flex
+    justify-content: center
+  @media(min-width: 768px)
+    padding: 50px 0px
+  @media(min-width: 992px)
+    padding: 78px 0px
+  @media(min-width: 1920px)
+    padding: 117px 0px
+
+  &__container
+    @media(min-width: 768px)
+      width: 671px
+      display: grid
+    @media(min-width: 1200px)
+      width: 770px
+    @media(min-width: 1920px)
+      width: 1326px
+
+  &__title
+    color: #0540ff
+    font-size: 15px
+    font-family: "JavaneseText"
+    margin-bottom: 4px
+    @media(max-width: 575px)
+      font-size: 7px
+    @media(min-width: 1920px)
+      font-size: 22px
+
+  &__subtitle
+    color: #2a2a2a
+    @media(max-width: 575px)
+      font-size: 14px
+      margin-bottom: 4px
+    @media(min-width: 576px)
+      font-size: 17px
+      margin-bottom: 10px
+    @media(min-width: 768px)
+      font-size: 20px
+      margin-bottom: 15px
+    @media(min-width: 992px)
+      font-size: 28px
+      margin-bottom: 22px
+    @media(min-width: 1200px)
+      font-size: 35px
+    @media(min-width: 1920px)
+      font-size: 52px
+
+  &__sub
+    color: #707070
+    font-family: "NanumSquareRegular"
+    @media(max-width: 575px)
+      margin-bottom: 50px
+      font-size: 14px
+    @media(min-width: 576px)
+      margin-bottom: 80px
+      font-size: 15px
+    @media(min-width: 768px)
+      margin-bottom: 100px
+      font-size: 16px
+    @media(min-width: 992px)
+      margin-bottom: 128px
+      font-size: 17px
+    @media(min-width: 1920px)
+      font-size: 25px
+      margin-bottom: 192px
+
+  &__pic
+    @media(max-width: 575px)
+      width: 337px
+    @media(min-width: 576px)
+      width: 500px
+    @media(min-width: 768px)
+      width: 612px
+    @media(min-width: 1920px)
+      width: 100%
+
+    &-container
+      display: flex
+      justify-content: center
+      width: 100%
+
+.how-to
+  &__second
+    width: 100%
+    height: 100%
+    background: #FAFBFE
+    padding: 78px 215px
+    display: flex
+    justify-content: center
+    @media(max-width: 575px)
+      padding: 20px
+      display: block
+    @media(min-width: 576px)
+      padding: 30px 0px
+    @media(min-width: 768px)
+      padding: 50px 0px
+    @media(min-width: 992px)
+      padding: 78px 0px
+    @media(min-width: 1920px)
+      padding: 117px 0px
+
+    &-container
+      @media(min-width: 576px)
+        display: flex
+        justify-content: space-between
+      @media(min-width: 768px)
+        width: 671px
+      @media(min-width: 1200px)
+        width: 770px
+      @media(min-width: 1920px)
+        width: 1326px
+
+    &_title
+      color: #0540ff
+      font-size: 15px
+      font-family: "JavaneseText"
+      margin-bottom: 10px
+      @media(max-width: 575px)
+        font-size: 7px
+      @media(min-width: 1920px)
+        font-size: 22px
+
+    &_subtitle
+      color: #2a2a2a
+      margin-bottom: 37px
+      @media(max-width: 575px)
+        font-size: 14px
+        margin-bottom: 4px
+      @media(min-width: 576px)
+        font-size: 17px
+        margin-bottom: 10px
+      @media(min-width: 768px)
+        font-size: 20px
+        margin-bottom: 15px
+      @media(min-width: 992px)
+        font-size: 28px
+        margin-bottom: 22px
+      @media(min-width: 1200px)
+        font-size: 35px
+      @media(min-width: 1920px)
+        font-size: 52px
+
+    &_sub
+      color: #000000
+      font-size: 17px
+      font-family: "NanumSquareRegular"
+      @media(max-width: 575px)
+        font-size: 14px
+      @media(min-width: 576px)
+        font-size: 15px
+      @media(min-width: 768px)
+        font-size: 16px
+      @media(min-width: 992px)
+        font-size: 17px
+      @media(min-width: 1920px)
+        font-size: 25px
+
+    &_text-block
+      @media(min-width: 576px)
+        width: 294px
+      @media(min-width: 768px)
+        width: 360px
+      @media(min-width: 1920px)
+        width: 433px
+
+.phone
+  @media(max-width: 575px)
+    width: 200px
+  @media(min-width: 576px)
+    width: 200px
+  @media(min-width: 768px)
+    width: 300px
+  @media(min-width: 1920px)
+    width: 450px
+
+  &-container
+    display: flex
+    justify-content: center
+    @media(max-width: 575px)
+      width: 100%
+      justify-content: flex-end
+
+.rand-mark
+  width: 100%
+  height: 100%
+  background: white
+  @media(max-width: 575px)
+    height: 100%
+    padding: 20px 20px 0px 20px
+  @media(min-width: 576px)
+    display: grid
+    align-content: space-between
+    padding: 30px 0px 0px 0px
+  @media(min-width: 768px)
+    height: 100%
+    padding: 50px 0px 0px 0px
+  @media(min-width: 992px)
+    padding: 78px 0px 0px 0px
+  @media(min-width: 1920px)
+    padding: 100px 0px 0px 0px
+
+  &__phone
+    @media(max-width: 575px)
+      width: 200px
+      z-index: 1
+    @media(min-width: 576px)
+      width: 240px
+      margin-top: 20px
+      margin-right: 0px
+    @media(min-width: 768px)
+      width: 350px
+    @media(min-width: 1200px)
+      margin-top: 0
+      width: 355px
+    @media(min-width: 1920px)
+      width: 520px
+
+    &-container
+      display: flex
+      justify-content: center
+      z-index: 1
+      background-image: url("./../../assets/icons/MainPage/arrow.png")
+      background-repeat: no-repeat
+
+      @media(max-width: 575px)
+        width: 100%
+        justify-content: flex-end
+      @media(min-width: 768px)
+        padding-left: 100px
+        padding-right: 115px
+        background-position: 15px 200px
+        background-size: 550px
+      @media(min-width: 1200px)
+        padding-left: 100px
+        padding-right: 125px
+        background-position: 15px 200px
+        background-size: 550px
+      @media(min-width: 1920px)
+        padding-left: 100px
+        padding-right: 175px
+        background-position: 15px 200px
+        background-size: 750px
+
+  &__text-block
+    @media(max-width: 575px)
+      display: block
+      justify-content: center
+      padding: 0
+    @media(min-width: 576px)
+      width: 265px
+      display: block
+
+    @media(min-width: 768px)
+      width: 177px
+    @media(min-width: 992px)
+      width: 254px
+    @media(min-width: 1200px)
+      width: 320px
+    @media(min-width: 1920px)
+      width: 482px
+
+    &_title
+      color: #0540ff
+      font-size: 15px
+      font-family: "JavaneseText"
+      margin-bottom: 10px
+      @media(max-width: 575px)
+        font-size: 7px
+      @media(min-width: 1920px)
+        font-size: 22px
+
+    &_subtitle
+      color: #2a2a2a
+      font-size: 35px
+      margin-bottom: 37px
+      @media(max-width: 575px)
+        font-size: 14px
+        margin-bottom: 4px
+      @media(min-width: 576px)
+        font-size: 17px
+        margin-bottom: 10px
+      @media(min-width: 768px)
+        font-size: 20px
+        margin-bottom: 15px
+      @media(min-width: 992px)
+        font-size: 28px
+        margin-bottom: 22px
+      @media(min-width: 1200px)
+        font-size: 35px
+      @media(min-width: 1920px)
+        font-size: 52px
+
+  &__title
+    color: #141414
+    font-family: "NanumSquareRegular"
+    margin-bottom: 23px
+    @media(max-width: 575px)
+      font-size: 14px
+      margin-bottom: 4px
+    @media(min-width: 576px)
+      font-size: 17px
+      margin-bottom: 10px
+    @media(min-width: 1920px)
+      font-size: 25px
+      margin-bottom: 15px
+
+  &__subtitle
+    color: #141414
+    font-family: "NanumSquareLight"
+    @media(max-width: 575px)
+      font-size: 9px
+    @media(min-width: 576px)
+      font-size: 10px
+    @media(min-width: 768px)
+      font-size: 12px
+    @media(min-width: 992px)
+      font-size: 14px
+    @media(min-width: 1920px)
+      font-size: 21px
+
+  &__pic
+    width: 100%
+    @media(max-width: 575px)
+      width: 137%
+      position: relative
+      right: 62px
+      margin-top: -140px
+    @media(min-width: 576px)
+      margin-top: -185px
+    @media(min-width: 992px)
+      margin-top: -300px
+    @media(min-width: 1920px)
+      margin-top: 0
+
+  &__justify
+    display: flex
+    justify-content: space-between
+    @media(max-width: 575px)
+      display: block
+      width: 100%
+    @media(min-width: 768px)
+      width: 900px
+      padding-left: 110px
+    @media(min-width: 1200px)
+      width: 1020px
+      padding-left: 100px
+    @media(min-width: 1920px)
+      padding-left: 170px
+      width: 1655px
+
+    &-container
+      display: flex
+      justify-content: center
+
+.customize-offerings
+  background: #FAFBFE
+  @media(max-width: 575px)
+    padding: 20px
+  @media(min-width: 576px)
+    padding: 30px 0px
+    display: flex
+    justify-content: center
+  @media(min-width: 768px)
+    padding: 50px 0px
+  @media(min-width: 992px)
+    padding: 78px 0px
+  @media(min-width: 1920px)
+    padding: 117px 0px
+
+  &__container
+    @media(min-width: 768px)
+      width: 671px
+      display: grid
+    @media(min-width: 1200px)
+      width: 770px
+    @media(min-width: 1920px)
+      width: 1326px
+
+  &__text-block
+    @media(min-width: 576px)
+      width: 274px
+    @media(min-width: 768px)
+      width: 429px
+    @media(min-width: 1920px)
+      width: 638px
+
+  &__title
+    color: #0540ff
+    font-size: 15px
+    font-family: "JavaneseText"
+    margin-bottom: 10px
+    @media(max-width: 575px)
+      font-size: 7px
+    @media(min-width: 1920px)
+      font-size: 22px
+
+  &__subtitle
+    color: #2a2a2a
+    margin-bottom: 37px
+    @media(max-width: 575px)
+      font-size: 14px
+      margin-bottom: 4px
+    @media(min-width: 576px)
+      font-size: 17px
+      margin-bottom: 10px
+    @media(min-width: 768px)
+      font-size: 20px
+      margin-bottom: 15px
+    @media(min-width: 992px)
+      font-size: 28px
+      margin-bottom: 22px
+    @media(min-width: 1200px)
+      font-size: 35px
+    @media(min-width: 1920px)
+      font-size: 52px
+
+  &__sub
+    color: #000000
+    font-size: 17px
+    font-family: "NanumSquareRegular"
+    width: 322px
+    @media(max-width: 575px)
+      font-size: 14px
+      width: 270px
+    @media(min-width: 576px)
+      font-size: 15px
+    @media(min-width: 768px)
+      font-size: 16px
+    @media(min-width: 992px)
+      font-size: 17px
+    @media(min-width: 1920px)
+      font-size: 25px
+
+  &__pic
+    @media(max-width: 575px)
+      width: 337px
+    @media(min-width: 576px)
+      width: 500px
+    @media(min-width: 768px)
+      width: 612px
+    @media(min-width: 1920px)
+      width: 100%
+
+    &-container
+      display: flex
+      justify-content: center
+      width: 100%
+
+.computer
+  width: 100%
+  height: 100%
+  @media(max-width: 575px)
+    display: grid
+    justify-content: center
+    padding: 20px
+  @media(min-width: 576px)
+    padding: 30px 0px
+    display: flex
+    justify-content: center
+  @media(min-width: 768px)
+    padding: 50px 0px
+  @media(min-width: 992px)
+    padding: 78px 0px
+  @media(min-width: 1920px)
+    padding: 117px 0px
+
+  &__container
+    @media(min-width: 576px)
+      width: 509px
+      display: grid
+    @media(min-width: 768px)
+      width: 671px
+    @media(min-width: 1200px)
+      width: 770px
+    @media(min-width: 1920px)
+      width: 1326px
+
+  &__title
+    color: #0540ff
+    font-size: 15px
+    font-family: "JavaneseText"
+    margin-bottom: 10px
+    @media(max-width: 575px)
+      display: none
+    @media(min-width: 1920px)
+      font-size: 22px
+
+  &__subtitle
+    color: #2a2a2a
+    margin-bottom: 37px
+    @media(max-width: 575px)
+      font-size: 14px
+      margin-bottom: 4px
+    @media(min-width: 576px)
+      font-size: 17px
+      margin-bottom: 10px
+    @media(min-width: 768px)
+      font-size: 20px
+      margin-bottom: 15px
+    @media(min-width: 992px)
+      font-size: 28px
+      margin-bottom: 22px
+    @media(min-width: 1200px)
+      font-size: 35px
+    @media(min-width: 1920px)
+      font-size: 52px
+
+  &__sub
+    color: #000000
+    font-size: 17px
+    font-family: "NanumSquareRegular"
+    @media(max-width: 575px)
+      font-size: 14px
+    @media(min-width: 576px)
+      font-size: 15px
+    @media(min-width: 768px)
+      font-size: 16px
+    @media(min-width: 992px)
+      font-size: 17px
+    @media(min-width: 1920px)
+      font-size: 25px
+
+  &__pic
+    max-width: 100%
+
+  &__up
+    width: 100%
+    height: 40px
+    @media(min-width: 1920px)
+      height: 60px

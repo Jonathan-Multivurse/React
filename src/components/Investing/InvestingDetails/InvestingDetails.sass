@@ -1,0 +1,96 @@
+.investing-details
+  &__safety
+    width: 100%
+    height: 116px
+    background: #676767
+    color: white
+    font-size: 35px
+    display: flex
+    justify-content: center
+    align-items: center
+    font-family: "NanumSquareRegular"
+    @media(max-width: 575px)
+      height: 65px
+      font-size: 18px
+    @media(min-width: 1920px)
+      height: 174px
+      font-size: 52px
+
+  &__links
+    background-color: white
+    display: flex
+    justify-content: space-between
+    @media(max-width: 575px)
+      padding: 10px 20px 0px 20px
+      align-items: flex-end
+    @media(min-width: 576px)
+      width: 516px
+      padding: 20px 20px 0px 20px
+    @media(min-width: 768px)
+      padding: 39px 30px 0px 30px
+ 
+
+    &-block
+      @media(min-width: 576px)
+        display: flex
+        width: 100%
+        justify-content: center
+        background-color: white
+
+    &-safety
+      @media(min-width: 576px)     
+        width: 582px
+      @media(min-width: 1920px)
+        width: 863px
+
+    &-profit
+      @media(min-width: 576px)     
+        width: 260px
+      @media(min-width: 1920px)
+        width: 340px
+
+    &-risk
+      @media(min-width: 576px)     
+        width: 410px
+      @media(min-width: 1920px)
+        width: 615px
+
+  &__link
+    color: #555555
+    font-size: 20px
+    text-decoration: none
+    font-family: "NanumSquareRegular"      
+    @media(max-width: 575px)
+      font-size: 14px
+      width: 77px
+      text-align: center
+      padding-bottom: 3px
+      &:first-child
+        margin-left: -10px
+    @media(min-width: 576px)
+      padding-bottom: 20px
+    @media(min-width: 768px)
+      padding-bottom: 30px
+    @media(min-width: 1920px)
+      font-size: 30px
+      padding-bottom: 45px
+
+
+    &:hover
+      color:  #555555
+      text-decoration: none
+      border-bottom: 2px solid #707070
+
+.renderedRoutes
+  display: none
+
+  &-active
+    display: block
+
+.renderedLinks
+  &-active
+    color: #3182f5
+    border-bottom: 2px solid #3182f5
+
+
+

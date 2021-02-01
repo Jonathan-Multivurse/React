@@ -1,0 +1,217 @@
+.member-info
+  &-container
+    @media(min-width: 576px)
+      margin-left: 20px
+    @media(min-width: 1920px)
+      margin-left: 85px
+
+  &-box
+    max-width: 680px
+    height: 100%
+    background: #FFFFFF
+    box-shadow: 0px 7px 20px #0F143129
+    padding: 4% 7%
+    @media(max-width: 400px)
+      padding: 4% 0%
+      margin-left: 10px
+    @media(min-width: 1920px)
+      max-width: 1010px
+
+  &__label
+    color: #555555
+    font-size: 14px
+    min-width: 130px
+    display: flex
+    align-items: flex-end
+    margin-bottom: 0px
+    @media(min-width: 1920px)
+      font-size: 21px
+      min-width: 195px
+
+  &__input
+    height: 28px
+    background: #FAFBFE
+    border: 1px solid #7A7A7A
+    border-radius: 2px
+    opacity: 0.4
+    color: #525252
+    font-size: 12px
+    font-family: "NanumSquareRegular"
+    padding: 0px 14px
+    @media(max-width: 575px)
+      width: 100%
+      margin-bottom: 20px
+    @media(min-width: 576px)
+      margin: 3px 0px
+      width: 245px
+    @media(min-width: 992px)
+      margin: 2px 0px
+    @media(min-width: 1920px)
+      height: 42px
+      border-radius: 3px
+      font-size: 18px
+      padding: 0px 21px
+
+  &__form-check
+    display: grid
+    align-content: center    
+    min-width: 150px
+    @media(min-width: 576px)
+      min-width: unset
+    @media(min-width: 1920px)
+      min-width: 225px
+   
+  &__comment
+    color: #3769FC
+    font-size: 9px
+    font-family: "NanumSquareRegular"
+    margin-top: 5px
+    @media(min-width: 1920px)
+      font-size: 13px
+      margin-top: 7px
+
+  &__last-row
+    border-bottom: 0.5px solid #BFBFBF
+    padding-bottom: 20px
+    @media(max-width: 575px)
+      border-bottom: none
+    @media(min-width: 1920px)
+      padding-bottom: 30px
+
+  &__modify-button
+    width: 127px
+    height: 41px
+    background: #3182F5
+    box-shadow: 8px 13px 10px #3182F533
+    border: 1px solid #85A2FF66
+    border-radius: 3px
+    color: #FFFFFF
+    font-size: 12px
+    font-family: "NanumSquareRegular"
+    @media(max-width: 575px)
+      display: none
+    @media(min-width: 1920px)
+      width: 190px
+      height: 61px
+      border-radius: 4px
+      font-size: 18px
+
+  &__button-column
+    display: flex
+    justify-content: center
+    padding: 29px 0px 8px 0px
+    @media(min-width: 1920px)
+      padding: 43px 0px 12px 0px
+
+  &__withdrawal-button
+    width: 99px
+    height: 28px
+    background: #FFFFFF
+    border: 1px solid #3769FC
+    border-radius: 2px
+    color: #3769FC
+    font-size: 11px
+    @media(min-width: 1920px)
+      width: 148px
+      height: 42px
+      border-radius: 3px
+      font-size: 16px
+
+  &__message
+    color: #555555
+    font-size: 12px
+    font-family: "NanumSquareRegular"
+    @media(max-width: 575px)
+      padding-right: 0px
+    @media(min-width: 1920px)
+      font-size: 18px
+
+    &-row
+      margin-top: 34px
+      @media(max-width: 575px)
+        align-items: center
+        margin-top: 10px
+        margin-bottom: 10px
+      @media(min-width: 1920px)
+        margin-top: 51px
+
+.input-to-change
+  @media(max-width: 575px)
+    width: 73%
+    margin-right: 5px
+    margin-bottom: 20px
+  @media(min-width: 576px)
+    max-width: 163px
+  @media(min-width: 1920px)
+    margin-right: 7px
+    margin-bottom: 30px
+    max-width: 244px
+
+.button-to-change
+  width: 76px
+  height: 28px
+  background: #FFFFFF
+  border: 1px solid #3769FC
+  border-radius: 2px
+  opacity: 0.83
+  color: #3769FC
+  font-size: 11px
+  margin-left: 6px
+  @media(max-width: 575px)
+    margin-top: 5px
+    margin-left: 0px
+  @media(min-width: 576px) 
+    margin: 2px 0px
+  @media(min-width: 768px)
+    margin-left: 6px
+  @media(min-width: 992px)
+    margin: 3px 6px
+  @media(min-width: 1920px)
+    width: 114px
+    height: 42px
+    border-radius: 3px
+    font-size: 16px
+    margin-left: 9px
+
+.checkbox-label
+  color: #7A7A7A
+  font-size: 12px
+  @media(min-width: 1920px)
+    font-size: 18px
+    margin-left: 10px
+    margin-top: 3px
+
+input[type="checkbox"]
+  appearance: none
+
+.member-info-check
+  width: 15px
+  height: 15px
+  border: 0.5px solid #3769FC
+  &:before
+    background: #FFFFFF
+  &:after
+    content: ''
+    display: block
+    left: 0
+    top: 0    
+    position: absolute
+  &:checked
+    background: url("./../../../assets/icons/checked.png") no-repeat
+    background-size: cover
+  @media(min-width: 1920px)
+    width: 22px
+    height: 22px
+
+.checkbox-row
+  margin-top: 13px
+  @media(max-width: 575px)
+    margin-bottom: 20px
+  @media(min-width: 1920px)
+    margin-top: 19px
+
+
+
+ 
+    
+    
