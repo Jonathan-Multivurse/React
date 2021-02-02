@@ -154,10 +154,10 @@ const MemberInfo = () => {
         </div>
       </div>
       <div className="row member-info__message-row">
-        <div className="col-8 col-md-6 col-lg-4 col-xl-5 member-info__message">
+        <div className="col-md-4 col-lg-4 col-xl-4 member-info__message" style={{margin: 0, padding: 0}}>
           리얼바이의 서비스를 더 이상 이용하지 않는다면
         </div>
-        <div className="col-4 col-md-6 col-lg-8 col-xl-7">
+        <div className="col-md-4 col-lg-4 col-xl-4" style={{marginLeft: 40}}>
           <button className="member-info__withdrawal-button">
             회원 탈퇴하기
           </button>

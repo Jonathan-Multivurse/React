@@ -1,8 +1,42 @@
 import React from "react";
-import "./InvestmentCard.sass";
-const InvestmentCard = ({
+import "./InvestmentCardDashboard.sass";
+import { makeStyles } from "@material-ui/core/styles";
+import { Link } from "react-router-dom";
+const useStyles = makeStyles((theme) => ({
+  root: {
+    [theme.breakpoints.up("sm")]: {
+      backgroundColor: "transparent",
+      position: "absolute",
+      height: 12,
+      right: 12,
+      top: 8,
+    },
+    [theme.breakpoints.up("md")]: {
+      backgroundColor: "transparent",
+      position: "absolute",
+      height: 12,
+      right: 12,
+      top: 8,
+    },
+    [theme.breakpoints.up("lg")]: {
+      backgroundColor: "transparent",
+      position: "absolute",
+      height: 12,
+      right: 12,
+      top: 8,
+    },
+    [theme.breakpoints.up("xl")]: {
+      backgroundColor: "transparent",
+      position: "absolute",
+      height: 20,
+      right: 20,
+      top: 12,
+    },
+  },
+}));
+
+const InvestmentCardDashboard = ({
   investmentObject,
-  icon,
   index,
   stars4,
   stars5,
@@ -27,34 +61,28 @@ const InvestmentCard = ({
     }
   };
 
+  const classes = useStyles();
+
   return (
     <div
       style={style}
-      className="investment-card-container"
+      className="investment-card-dash-container"
       onMouseOver={changeStyles}
       onMouseOut={returnStyles}
     >
       <div
-        className="col-8 offset-2 col-sm-6 offset-sm-0 col-md-4 investment-card__card"
+        className="col-8 col-sm-6 offset-sm-0 col-lg-4 investment-card-dash__card"
         key={index}
       >
-        <div>
+        <Link to="/investing/details">
           <img
             src={investmentObject.image}
             alt="main"
-            className="investment-card__card-picture"
+            className="investment-card-dash__card-picture"
           />
-          <img
-            src={investmentObject.icon}
-            alt="heart"
-            style={{
-              backgroundColor: "transparent",
-              position: "absolute",
-              right: 10,
-              bottom: 270,
-            }}
-          />
-        </div>
+        </Link>
+        <img src={investmentObject.icon} alt="heart" className={classes.root} />
+
         <div className="investment-card__card-body container">
           <div className="row">
             <div className="col-4 investment-card__card-small-box">
@@ -73,18 +101,22 @@ const InvestmentCard = ({
               <p className="card-small-title">배당수익률</p>
               <div className="card-info">
                 <p className="count">연&nbsp; &nbsp;</p>
-                <p className="percentage">{investmentObject.dividendYield}</p>
-                <p className="count">%</p>
+                <p className="percentage-dash">
+                  {investmentObject.dividendYield}
+                </p>
+                <p className="count-dash">%</p>
               </div>
             </div>
             <div className="col-6 investment-card__card-large-box">
               <p className="card-small-title">총 수익률</p>
               <div className="card-info">
-                <p className="count">연&nbsp; &nbsp;</p>
-                <p className="percentage">{investmentObject.totalReturn}</p>
-                <p className="count">%</p>
+                <p className="count-dash">연&nbsp; &nbsp;</p>
+                <p className="percentage-dash">
+                  {investmentObject.totalReturn}
+                </p>
+                <p className="count-dash">%</p>
               </div>
-              <p className="comment">(매각차이 포함)</p>
+              <p className="comment-dash">(매각차이 포함)</p>
             </div>
           </div>
         </div>
@@ -94,4 +126,4 @@ const InvestmentCard = ({
   );
 };
 
-export default InvestmentCard;
+export default InvestmentCardDashboard;

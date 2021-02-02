@@ -5,7 +5,6 @@ import howTo from "./../../assets/icons/MainPage/how-to.svg";
 import phone from "./../../assets/icons/MainPage/phone.png";
 import randMark from "./../../assets/icons/MainPage/rand-mark.svg";
 import phoneSecond from "./../../assets/icons/MainPage/phone-2.png";
-import arrow from "./../../assets/icons/MainPage/arrow.png";
 import customize from "./../../assets/icons/MainPage/customize.svg";
 import computer from "./../../assets/icons/MainPage/computer.png";
 import pageUp from "./../../assets/icons/MainPage/page-up.svg";

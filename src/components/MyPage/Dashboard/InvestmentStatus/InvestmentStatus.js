@@ -1,5 +1,13 @@
 import React from "react";
-import { CarouselProvider, Dot, Slide, Slider } from "pure-react-carousel";
+import {
+  CarouselProvider,
+  Dot,
+  Slide,
+  Slider,
+  ButtonBack,
+  ButtonNext,
+} from "pure-react-carousel";
+import { KeyboardArrowLeft, KeyboardArrowRight } from "@material-ui/icons";
 import "pure-react-carousel/dist/react-carousel.es.css";
 import FirstSlide from "./FirstSlide/FirstSlide";
 import SlidePart from "./SlidePart/SlidePart";
@@ -36,6 +44,20 @@ const InvestmentStatus = () => {
             <SlidePart index="3" />
           </Slide>
         </Slider>
+        <div className="status__arrows">
+          <ButtonBack className="status__arrow" style={{outline: 'none', background: 'transparent'}}>
+            <KeyboardArrowLeft
+              className="status__icon"
+              style={{ fontSize: 30 }}
+            />
+          </ButtonBack>
+          <ButtonNext className="satus__arrow" style={{outline: 'none', background: 'transparent', border: 'none'}}>
+            <KeyboardArrowRight
+              className="status__icon"
+              style={{ fontSize: 30 }}
+            />
+          </ButtonNext>
+        </div>
       </div>
     </CarouselProvider>
   );

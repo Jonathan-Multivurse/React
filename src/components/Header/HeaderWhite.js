@@ -45,7 +45,7 @@ const HeaderWhite = ({ links, onMouseOver, onMouseOut }) => {
                       className={link.linkClass}
                       to={link.path}
                       onClick={closeNav}
-                      style={{fontFamily: "NanumSquareRegular"}}
+                      style={{ fontFamily: "NanumSquareRegular" }}
                       activeClassName="header__link-active"
                     >
                       {link.title}
@@ -70,7 +70,7 @@ const HeaderWhite = ({ links, onMouseOver, onMouseOut }) => {
                     className="nav-login-button"
                     to="/login"
                     onClick={closeNav}
-                    style={{fontFamily: "NanumSquareRegular"}}
+                    style={{ fontFamily: "NanumSquareRegular" }}
                     activeClassName="header__link-active"
                   >
                     로그인
@@ -79,7 +79,7 @@ const HeaderWhite = ({ links, onMouseOver, onMouseOut }) => {
                     className="nav-enter-button"
                     to="/register"
                     onClick={closeNav}
-                    style={{fontFamily: "NanumSquareRegular"}}
+                    style={{ fontFamily: "NanumSquareRegular" }}
                     activeClassName="header__link-active"
                   >
                     회원가입

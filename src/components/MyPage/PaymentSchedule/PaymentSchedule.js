@@ -127,7 +127,9 @@ const PaymentSchedule = () => {
       <div className="row schedule-row">
         <div className="col add-block">
           <div className="row graph-row">
-            <div className="graph-title">투자 상품</div>
+            <div className="graph-title" style={{ color: "#3769FC" }}>
+              투자 상품
+            </div>
             <div className="graph-title">지급일</div>
             <div className="graph-title">예상 배당금액</div>
             <div className="graph-title">실현 배당금액</div>

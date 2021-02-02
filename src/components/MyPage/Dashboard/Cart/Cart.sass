@@ -1,10 +1,16 @@
 .cart
   @media(min-width: 768px)
-    margin-left: 26px
+    margin-left: 30px
 
   &__title
-    padding: 16px 0px 0px 16px
+
     display: flex
+    @media(min-width: 768px)
+      padding: 16px 0px 0px 5px
+      margin-right: 10px
+    @media(min-width: 1920px)
+      padding: 16px 0px 0px 15px
+      margin-left: 60px
 
   &__icon
     height: 22px
@@ -16,32 +22,12 @@
     font-size: 15px
 
   &__element
-    padding: 21px 9px
-    height: 228px
+    padding: 20px 50px 0px 20px
+    height: 218px
     background: #FFFFFF
-    position: relative
-    &:first-child
-      padding: 21px 9px 21px 21px    
-      @media(max-width: 767px)
-        padding: 21px 9px
-      @media(min-width: 992px)
-        padding: 21px 9px 21px 21px 
-    &:last-child
-      padding: 21px 21px 21px 9px
-      @media(max-width: 767px)
-        padding: 21px 9px
-      @media(min-width: 992px)
-        padding: 21px 21px 21px 9px
+    
+    
 
-    @media(max-width: 767px)
-      display: flex
-      justify-content: center
-      &:nth-child(2), &:nth-child(3)
-        padding-left: 15px
-    @media(min-width: 768px) and (max-width: 991px)
-      &:nth-child(2), &:nth-child(3)
-        padding-left: 40px
-      
     &_pic
       position: absolute
       width: 204px
@@ -50,19 +36,31 @@
         width: 218px
         height: 184px
       @media(min-width: 1200px)
+        width: 180px
+        height: 176px
+      @media(min-width: 1920px)
         width: 204px
         height: 176px
-
 
   &__box-shadow
     box-shadow: 0px 7px 20px #0F143129
     margin-top: 17px
     @media(max-width: 575px)
       display: block
-      max-width: 448px  
+      max-width: 448px
     @media(min-width: 576px)
       display: flex
-      justify-content: center
+      justify-content: space-around
       background: #FFFFFF
+      width: 630px
     @media(min-width: 768px)
       background: #FFFFFF
+      display: flex
+      justify-content: space-around
+      width: 650px
+    @media(min-width: 1920px)
+      background: #FFFFFF
+      display: flex
+      justify-content: space-around
+      margin-left: 75px
+      width: 740px

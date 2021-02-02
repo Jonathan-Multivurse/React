@@ -7,11 +7,11 @@ import fourthMethod from "./../../assets/icons/InvestingMethod/method-4.svg";
 import fifthMethod from "./../../assets/icons/InvestingMethod/method-5.svg";
 import sixthMethod from "./../../assets/icons/InvestingMethod/method-6.svg";
 import numberOne from "./../../assets/icons/InvestingMethod/01.svg";
-import numberTwo from "./../../assets/icons/InvestingMethod/02.svg";
+import numberTwo from "./../../assets/icons/InvestingMethod/2.png";
 import numberThree from "./../../assets/icons/InvestingMethod/03.svg";
-import numberFour from "./../../assets/icons/InvestingMethod/04.svg";
+import numberFour from "./../../assets/icons/InvestingMethod/4.png";
 import numberFive from "./../../assets/icons/InvestingMethod/05.svg";
-import numberSix from "./../../assets/icons/InvestingMethod/06.svg";
+import numberSix from "./../../assets/icons/InvestingMethod/6.png";
 
 const InvestingMethod = () => {
   return (
@@ -150,15 +150,7 @@ const InvestingMethod = () => {
                 alt="first method"
                 className="investing-method__right-icon investing-method__right-icon-last"
               />
-              <div className="investing-method__text-container">
-                <p className="investing-method__text-title">06. Sixth</p>
-                <p className="investing-method__text-subtitle">
-                  투자 현황 확인하기
-                </p>
-                <p className="investing-method__text-sub">
-                  투자 현황과 예상 수익금을 확인 하세요
-                </p>
-              </div>
+              <div className="investing-method__text-container"></div>
               <div className="investing-method__button-container">
                 <button className="investing-method__button-last investing-method__button">
                   마이페이지

@@ -1,4 +1,3 @@
-import { isWidthDown } from "@material-ui/core";
 import React from "react";
 import { useLocation, NavLink } from "react-router-dom";
 import "./Header.sass";

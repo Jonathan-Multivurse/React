@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
-
 import MainPage from "./MainPage/MainPage";
 import MyPage from "./MyPage/MyPage";
 import Header from "./Header/Header";

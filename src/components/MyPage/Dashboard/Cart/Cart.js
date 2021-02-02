@@ -1,6 +1,6 @@
 import React from "react";
 import "./Cart.sass";
-import heart from "./../../../../assets/icons/heart.png";
+import heart from "./../../../../assets/icons/heart.svg";
 import cart1 from "./../../../../assets/icons/cart1.png";
 import cart2 from "./../../../../assets/icons/cart2.png";
 import cart3 from "./../../../../assets/icons/cart3.png";
