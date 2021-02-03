@@ -4,10 +4,13 @@ import aboutCompany from "./../../assets/icons/AboutCompany/about-company.jpg";
 import beRichFirstGraph from "./../../assets/icons/AboutCompany/rich-1.png";
 import beRichSecondGraph from "./../../assets/icons/AboutCompany/rich-2.png";
 import arrow from "./../../assets/icons/arrow-up.png";
-import goalImg from "./../../assets/icons/AboutCompany/goal-img.png";
-import mission from "./../../assets/icons/AboutCompany/mission.svg";
+import compass from "./../../assets/icons/AboutCompany/compass.png";
+import money from "./../../assets/icons/AboutCompany/money.png";
+import umbrella from "./../../assets/icons/AboutCompany/umbrella.png";
 import platform from "./../../assets/icons/AboutCompany/platform.svg";
 import Footer from "./../Footer/Footer";
+import { Grid } from "@material-ui/core";
+import Box from "@material-ui/core/Box";
 const AboutCompany = () => {
   return (
     <>
@@ -35,16 +38,30 @@ const AboutCompany = () => {
         <div className="be-rich__container">
           <p className="be-rich__title">나도 부자가 되고싶다.</p>
           <div className="be-rich__graphs">
-            <img
-              src={beRichFirstGraph}
-              alt="be rich graph"
-              className="be-rich__col"
-            />
-            <img
-              src={beRichSecondGraph}
-              alt="be rich graph"
-              className="be-rich__col"
-            />
+            <div
+              className="be-rich__contained1"
+              style={{ position: "relative" }}
+            >
+              <img
+                src={beRichFirstGraph}
+                alt="be rich graph"
+                className="be-rich__col"
+              />
+              <p className="be-rich__imagetext1">점점 벌어지는 소득 격차</p>
+            </div>
+            <div
+              className="be-rich__contained2"
+              style={{ position: "relative" }}
+            >
+              <img
+                src={beRichSecondGraph}
+                alt="be rich graph"
+                className="be-rich__col"
+              />
+              <p className="be-rich__imagetext2">
+                낮은 금융소득으로는 부자가 될 수 없다
+              </p>
+            </div>
           </div>
           <p className="be-rich__subtitle">
             근로 소득만으로 아파트 가격 상승률을 따라가기 힘든 시기입니다. (근로
@@ -63,13 +80,48 @@ const AboutCompany = () => {
       <div className="goal">
         <div className="goal__container">
           <div className="goal__pic-container">Real Buy 의 목표</div>
-          <img src={goalImg} alt="goal" className="goal__pic-big" />
+          <Grid
+            container
+            direction="row"
+            className="goal__icons-container"
+            style={{
+              height: 200,
+              width: 700,
+              display: "flex",
+              justifyContent: "space-between",
+            }}
+          >
+            <Grid item direction="column" className="goal__icons-subcontainer">
+              <img src={umbrella} alt="umb" className="goal__icons-icon" />
+              <div className="goal__icons-title">고객 이익 보호</div>
+              <div className="goal__icons-subtitle">
+                고객의 이익을 보호하기 위해 최선의 서비스 제공
+              </div>
+            </Grid>
+            <Box borderRight={2} style={{ color: "#676767" }} />
+            <Grid item direction="column" className="goal__icons-subcontainer">
+              <img src={money} alt="mon" className="goal__icons-icon" />
+              <div className="goal__icons-title">금융 수익 증대</div>
+              <div className="goal__icons-subtitle">
+                안정적인 실물자산 투자를 통해 높은 금융소득을 제공
+              </div>
+            </Grid>
+            <Box borderRight={2} style={{ color: "#676767" }} />
+            <Grid item direction="column" className="goal__icons-subcontainer">
+              <img src={compass} alt="com" className="goal__icons-icon" />
+              <div className="goal__icons-title">투자 편의 확대</div>
+              <div className="goal__icons-subtitle">
+                투자가 어려운 고객들에게 간편투자 맞춤형 상품을 제공하며 투자
+                편의 확대
+              </div>
+            </Grid>
+          </Grid>
         </div>
       </div>
       <div className="mission">
         <div className="mission__container">
           <div className="mission__pic-container">
-            <img src={mission} alt="mission" className="mission__pic" />
+            <p className="mission__pic-text">REAL BUY's Mission</p>
           </div>
           <p className="mission__text">
             “세상 모든 데이터를 체계화하여” <br />
