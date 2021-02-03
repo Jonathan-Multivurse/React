@@ -1,7 +1,6 @@
 import React from "react";
 import "./AboutCompany.sass";
 import aboutCompany from "./../../assets/icons/AboutCompany/about-company.jpg";
-import realBuy from "./../../assets/icons/AboutCompany/realBuy.svg";
 import beRichFirstGraph from "./../../assets/icons/AboutCompany/rich-1.png";
 import beRichSecondGraph from "./../../assets/icons/AboutCompany/rich-2.png";
 import arrow from "./../../assets/icons/arrow-up.png";
@@ -20,7 +19,7 @@ const AboutCompany = () => {
         />
         <div className="about-company__image-block">
           <div className="about-company__img-container">
-            <img src={realBuy} alt="real buy" />
+            <p className="about-company__vision">REAL BUY's Vision</p>
           </div>
           <p className="about-company__title">
             "상상하는 세상이, 현실이 되는 투자"

@@ -1,17 +1,11 @@
 import React from "react";
 import "./Offers.sass";
-import offerFirst from "./../../../assets/icons/Offers/offer1.png";
-import offerSecond from "./../../../assets/icons/Offers/offer2.png";
-import offerThird from "./../../../assets/icons/Offers/offer3.png";
-import three from "./../../../assets/icons/Offers/stars3.png";
-import four from "./../../../assets/icons/Offers/stars4.png";
-import five from "./../../../assets/icons/Offers/stars5.png";
 import offers from "./../../../assets/icons/Offers/offers.jpg";
 
 const Offers = () => {
   return (
     <div className="offers__container">
-      <img src={offers} className="offers-image" />
+      <img src={offers} alt="offers" className="offers-image" />
 
       {/*  <div className="offers__offer">
         <p className="offers__offer-title">글로벌 랜드 마크</p>

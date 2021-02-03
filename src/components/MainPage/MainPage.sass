@@ -72,7 +72,7 @@
     @media(min-width: 768px)
       top: 110px
     @media(min-width: 992px)
-      top: 197px
+      top: 175px
     @media(min-width: 1920px)
       top: 300px
 
@@ -81,14 +81,14 @@
     justify-content: center
 
   &__title
-    font-size: 29px
+    font-size: 48px
     line-height: 1.1
     text-align: center
     color: #ffffff
     @media(max-width: 575px)
       font-size: 17px
     @media(min-width: 1920px)
-      font-size: 43px
+      font-size: 48px
 
   &__subtitle
     margin-top: 22px
@@ -322,6 +322,11 @@
     padding: 78px 215px
     display: flex
     justify-content: center
+    align-items: flex-end
+    background-image: url("./../../assets/icons/MainPage/rand-mark.svg")
+    background-repeat: no-repeat
+    background-position: bottom
+    background-size: contain
     @media(max-width: 575px)
       padding: 20px
       display: block
@@ -330,8 +335,10 @@
     @media(min-width: 768px)
       padding: 50px 0px
     @media(min-width: 992px)
-      padding: 78px 0px
+      height: 875px
+      padding: 0px 0px
     @media(min-width: 1920px)
+      height: 1200px
       padding: 117px 0px
 
     &-container
@@ -341,6 +348,7 @@
       @media(min-width: 768px)
         width: 671px
       @media(min-width: 1200px)
+        margin-bottom: 250px
         width: 770px
       @media(min-width: 1920px)
         width: 1326px
@@ -395,8 +403,10 @@
         width: 294px
       @media(min-width: 768px)
         width: 360px
+        margin-top: 60px
       @media(min-width: 1920px)
         width: 433px
+        margin-top: 80px
 
 .phone
   @media(max-width: 575px)
@@ -414,6 +424,7 @@
     @media(max-width: 575px)
       width: 100%
       justify-content: flex-end
+    @media(max-width: 575px)
 
 .rand-mark
   width: 100%
@@ -484,6 +495,11 @@
     @media(min-width: 576px)
       width: 265px
       display: block
+      margin-top: 70px
+    @media(min-width: 1920px)
+      width: 265px
+      display: block
+      margin-top: 100px
 
     @media(min-width: 768px)
       width: 177px

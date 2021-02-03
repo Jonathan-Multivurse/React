@@ -9,9 +9,9 @@
   @media(min-width: 576px)
     padding: 45px 70px
   @media(min-width: 768px)
-    padding: 50px 42px  
+    padding: 50px 42px
     margin-top: 70px
-  @media(min-width: 992px)        
+  @media(min-width: 992px)
     padding: 60px 0px
   @media(min-width: 1920px)
     padding: 95px 0px
@@ -41,7 +41,7 @@
         font-size: 30px
         font-family: "NanumSquareRegular"
         color: #555555
-            
+
   &__main-pic
     width: 68%
     margin-bottom: 80px
@@ -55,16 +55,16 @@
   &__pic-block
     border-bottom: 2px solid #FFFFFF
     margin-bottom: 46px
+    height: 300px
     &:last-child
       border-bottom: none
       margin-bottom: 0
       display: flex
-      justify-content: flex-start
+      justify-content: center
       @media(max-width: 767px)
         display: block
       @media(min-width: 1920px)
-        margin-left: 40px
-
+        margin-left: 0px
     @media(max-width: 575px)
       display: grid
       justify-content: center
@@ -74,33 +74,34 @@
       padding-bottom: 30px
     @media(min-width: 1920px)
       padding-bottom: 45px
-    
+      height: 400px
+
   &__full-img
-    width: 100%
+    width: 80%
+    @media(min-width: 1200px)
     @media(min-width: 1920px)
-      width: 810px
-      height: 355px
+      width: 910px
+      height: 300px
 
   &__left-icon
-    margin-right: 39px
+    margin-right: 40px
     @media(min-width: 1920px)
       margin-right: 86px
       width: 317px
       height: 300px
 
   &__right-icon
-    margin-left: 39px
+    margin-left: 40px
     @media(max-width: 575px)
       margin-bottom: 24px
     @media(min-width: 1920px)
-      margin-right: 86px
+      margin-left: 86px
       width: 317px
       height: 300px
 
     &-last
       @media(max-width: 575px)
         margin-bottom: 0
-     
 
   &__number-left
     @media(max-width: 575px)
@@ -141,20 +142,19 @@
       @media(min-width: 992px)
         top: 130px
       @media(min-width: 1200px)
-        top: 136px
-        right: 62px
+        top: 160px
+        right: 105px
       @media(min-width: 1920px)
-        top: 228px
-        right: 78px
+        top: 200px
+        right: 125px
 
       &-container
         @media(min-width: 576px)
           display: flex
-          justify-content: flex-end    
+          justify-content: flex-end
           margin-bottom: 25px
         @media(min-width: 768px)
           display: none
-
 
     &-left
       @media(max-width: 575px)
@@ -164,12 +164,13 @@
         top: 131px
         left: 60px
       @media(min-width: 992px)
-        top: 126px
+        top: 160px
       @media(min-width: 1200px)
-        left: 61px
+        top: 165px
+        left: 124px
       @media(min-width: 1920px)
-        top: 232px
-        left: 86px
+        top: 200px
+        left: 160px
 
     &-last
       @media(max-width: 575px)
@@ -201,26 +202,27 @@
         display: none
 
   &__text
-    &-container
-      position: relative
+    &-rightcontainer
+      position: absolute
       @media(max-width: 459px)
         bottom: 306px
         right: 0
       @media(min-width: 460px)
         bottom: 328px
         right: 0
-      @media(min-width: 503px) 
+      @media(min-width: 503px)
         bottom: 358px
       @media(min-width: 768px)
-        top: 9px
-        right: 509px
+        top: 60px
+        margin-right: 174px
       @media(min-width: 1920px)
-        top: 62px
-        right: 852px
+        top: 45px
+        right: 200px
 
-    &-title
+    &-righttitle
       color: #0154C8
       text-align: end
+      font-family: "JavaneseText"
       @media(max-width: 459px)
         font-size: 9px
         margin-bottom: 7px
@@ -230,14 +232,15 @@
       @media(min-width: 503px)
         font-size: 14px
         margin-bottom: 8px
-      @media(min-width: 768px)      
-        margin-bottom: 11px
+      @media(min-width: 768px)
+        font-size: 16px
+        margin-bottom: 0px
         width: 275px
       @media(min-width: 1920px)
-        margin-bottom: 16px
+        font-size: 24px
         width: 412px
 
-    &-subtitle
+    &-rightsubtitle
       color: #555555
       text-align: end
       @media(max-width: 459px)
@@ -249,13 +252,13 @@
       @media(min-width: 503px)
         font-size: 19px
         margin-bottom: 12px
-      @media(min-width: 768px)        
-        margin-bottom: 20px   
+      @media(min-width: 768px)
+        margin-bottom: 20px
       @media(min-width: 1920px)
         margin-bottom: 30px
         font-size: 28px
 
-    &-sub
+    &-rightsub
       color: #555555
       font-family: "NanumSquareLight"
       text-align: end
@@ -263,7 +266,80 @@
         font-size: 12px
       @media(min-width: 460px)
         font-size: 14px
-      @media(min-width: 503px)      
+      @media(min-width: 503px)
+        font-size: 16px
+      @media(min-width: 1920px)
+        font-size: 24px
+
+    &-leftcontainer
+      position: absolute
+      width: 300px
+      height: 150px
+      @media(max-width: 459px)
+        bottom: 306px
+        right: 0
+      @media(min-width: 460px)
+        bottom: 328px
+        right: 0
+      @media(min-width: 503px)
+        bottom: 358px
+      @media(min-width: 768px)
+        top: 60px
+        right: 270px
+      @media(min-width: 1920px)
+        top: 40px
+        right: 465px
+        width: 450px
+
+    &-lefttitle
+      color: #0154C8
+      text-align: start
+      font-family: "JavaneseText"
+      @media(max-width: 459px)
+        font-size: 9px
+        margin-bottom: 7px
+      @media(min-width: 460px)
+        font-size: 12px
+        margin-bottom: 7px
+      @media(min-width: 503px)
+        font-size: 14px
+        margin-bottom: 8px
+      @media(min-width: 768px)
+        font-size: 16px
+        margin-bottom: 0px
+        width: 275px
+      @media(min-width: 1920px)
+        font-size: 24px
+        margin-bottom: 0px
+        width: 412px
+
+    &-leftsubtitle
+      color: #555555
+      text-align: start
+      @media(max-width: 459px)
+        font-size: 13px
+        margin-bottom: 6px
+      @media(min-width: 460px)
+        font-size: 15px
+        margin-bottom: 8px
+      @media(min-width: 503px)
+        font-size: 19px
+        margin-bottom: 12px
+      @media(min-width: 768px)
+        margin-bottom: 20px
+      @media(min-width: 1920px)
+        margin-bottom: 30px
+        font-size: 28px
+
+    &-leftsub
+      color: #555555
+      font-family: "NanumSquareLight"
+      text-align: start
+      @media(max-width: 459px)
+        font-size: 12px
+      @media(min-width: 460px)
+        font-size: 14px
+      @media(min-width: 503px)
         font-size: 16px
       @media(min-width: 1920px)
         font-size: 24px
@@ -273,6 +349,6 @@
     position: absolute
     @media(max-width: 767px)
       display: none
-      
+
 .width
   width: 100%

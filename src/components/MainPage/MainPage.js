@@ -8,7 +8,6 @@ import phoneSecond from "./../../assets/icons/MainPage/phone-2.png";
 import customize from "./../../assets/icons/MainPage/customize.svg";
 import computer from "./../../assets/icons/MainPage/computer.png";
 import pageUp from "./../../assets/icons/MainPage/page-up.svg";
-import Offers from "./Offers/Offers";
 import Footer from "./../Footer/Footer";
 import toBuy1 from "./../../assets/icons/MainPage/to-buy-1.svg";
 import toBuy2 from "./../../assets/icons/MainPage/to-buy-2.svg";
@@ -44,9 +43,6 @@ const MainPage = () => {
       <Link to="/investing">
         <img className="main__to-buy-third" src={toBuy3} alt="main" />
       </Link>
-      <div className="main__offers">
-        <Offers />
-      </div>
       <div className="why-real-buy">
         <p className="why-real-buy__title">Why Real Buy ?</p>
         <p className="why-real-buy__subtitle">
@@ -118,7 +114,7 @@ const MainPage = () => {
       <div className="how-to__second">
         <div className="how-to__second-container">
           <div className="how-to__second_text-block">
-            <p className="how-to__second_title">How to</p>
+            <p className="how-to__second_title"></p>
             <p className="how-to__second_subtitle">
               차곡차곡 임대료 받는
               <br />
@@ -137,7 +133,7 @@ const MainPage = () => {
         <div className="rand-mark__justify-container">
           <div className="rand-mark__justify">
             <div className="rand-mark__text-block">
-              <p className="rand-mark__text-block_title">Rand Mark</p>
+              <p className="rand-mark__text-block_title"></p>
               <p className="rand-mark__text-block_subtitle">
                 부동산 차익을 꿈꾸며 건물에 투자하자
               </p>
@@ -155,12 +151,11 @@ const MainPage = () => {
             </div>
           </div>
         </div>
-        <img src={randMark} alt="rand mark" className="rand-mark__pic" />
       </div>
       <div className="customize-offerings">
         <div className="customize-offerings__container">
           <div className="customize-offerings__text-block">
-            <p className="customize-offerings__title">How to</p>
+            <p className="customize-offerings__title"></p>
             <p className="customize-offerings__subtitle">
               시장 환경과 투자자 성향에 맞는
               <br />

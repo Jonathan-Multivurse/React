@@ -1,12 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import "./CustomerSupport.sass";
-import { NavLink } from "react-router-dom";
 import back from "./../../assets/icons/Mobile/back.svg";
 import { withStyles } from "@material-ui/core/styles";
 import MuiAccordion from "@material-ui/core/Accordion";
 import MuiAccordionSummary from "@material-ui/core/AccordionSummary";
 import MuiAccordionDetails from "@material-ui/core/AccordionDetails";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
+import Footer from "./../Footer/Footer";
 import Typography from "@material-ui/core/Typography";
 
 const Accordion = withStyles({
@@ -136,56 +136,73 @@ const links = [
   },
   {
     title: "투자 상품",
-    path: "/customer-support/product",
+    path: "/customer-support/common",
   },
   {
     title: "투자 구조",
-    path: "/customer-support/structure",
+    path: "/customer-support/common",
   },
   {
     title: "투자 방법",
-    path: "/customer-support/how-to-invest",
+    path: "/customer-support/common",
   },
   {
     title: "회원 정보",
-    path: "/customer-support/membership",
+    path: "/customer-support/common",
   },
   {
     title: "기타",
-    path: "/customer-support/other-questions",
+    path: "/customer-support/common",
   },
 ];
 
 const CustomerSupport = () => {
-  return (
-    <div className="customer-support">
-      <div className="customer-support-mobile__back">
-        <img
-          src={back}
-          alt="back"
-          className="customer-support-mobile__back-button"
-        />
-        <p className="customer-support-mobile__back-button_title">마이페이지</p>
-      </div>
-      <div className="customer-support__container">
-        <p className="customer-support__title">자주하는 질문</p>
+  const [activeSafeIndex, setActiveSafeIndex] = useState(0);
 
-        <div className="customer-support__links">
-          {links.map((link) => {
-            return (
-              <NavLink
-                to={link.path}
-                key={link.title}
-                activeClassName="customer-support__link-active"
-              >
-                {link.title}
-              </NavLink>
-            );
-          })}
+  const handleSafetyClick = (index) => {
+    setActiveSafeIndex(index);
+  };
+
+  const customerLinks = links.map((link, index) => {
+    const active = index === activeSafeIndex ? "renderedLinks-active" : "";
+    return (
+      <span
+        key={index}
+        className={`investing-details__link ${active}`}
+        onClick={() => handleSafetyClick(index)}
+      >
+        {link.title}
+      </span>
+    );
+  });
+
+  return (
+    <>
+      <div className="customer-support">
+        <div className="customer-support-mobile__back">
+          <img
+            src={back}
+            alt="back"
+            className="customer-support-mobile__back-button"
+          />
+          <p className="customer-support-mobile__back-button_title">
+            마이페이지
+          </p>
         </div>
-        <div className="customer-support__block">{CustomizedAccordions()}</div>
+        <div className="customer-support__container">
+          <p className="customer-support__title">자주하는 질문</p>
+
+          <div className="customer-support__links" style={{ height: 40 }}>
+            {customerLinks}
+          </div>
+
+          <div className="customer-support__block">
+            {CustomizedAccordions()}
+          </div>
+        </div>
       </div>
-    </div>
+      <Footer mode="light" />
+    </>
   );
 };
 

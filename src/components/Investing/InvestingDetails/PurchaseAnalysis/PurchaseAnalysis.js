@@ -1,7 +1,6 @@
 import React from "react";
 import "./PurchaseAnalysis.sass";
-import arrowLeft from "./../../../../assets/icons/PurchaseAnalysis/arrow-left.png";
-import arrowRight from "./../../../../assets/icons/PurchaseAnalysis/arrow-right.png";
+import { KeyboardArrowLeft, KeyboardArrowRight } from "@material-ui/icons";
 import {
   ButtonBack,
   ButtonNext,
@@ -24,7 +23,7 @@ const PurchaseAnalysis = () => {
           <CarouselProvider
             naturalSlideWidth={100}
             naturalSlideHeight={150}
-            totalSlides={4}
+            totalSlides={3}
           >
             <div>
               <Slider className="purchase-analysis__slider">
@@ -54,18 +53,29 @@ const PurchaseAnalysis = () => {
                 <Dot slide={2}></Dot>
               </div>
               <div className="purchase-analysis__arrows">
-                <ButtonBack className="purchase-analysis__arrow">
-                  <img
-                    src={arrowLeft}
-                    alt="arrow left"
-                    className="purchase-analysis__pic"
+                <ButtonBack
+                  className="purchase-analysis__arrow"
+                  style={{
+                    outline: "none",
+                    background: "transparent",
+                  }}
+                >
+                  <KeyboardArrowLeft
+                    className="purchase-analysis__icon"
+                    style={{ fontSize: 35 }}
                   />
                 </ButtonBack>
-                <ButtonNext className="purchase-analysis__arrow">
-                  <img
-                    src={arrowRight}
-                    alt="arrow right"
-                    className="purchase-analysis__pic"
+                <ButtonNext
+                  className="purchase-analysis__arrow"
+                  style={{
+                    outline: "none",
+                    background: "transparent",
+                    border: "none",
+                  }}
+                >
+                  <KeyboardArrowRight
+                    className="purchase-analysis__icon"
+                    style={{ fontSize: 35 }}
                   />
                 </ButtonNext>
               </div>
