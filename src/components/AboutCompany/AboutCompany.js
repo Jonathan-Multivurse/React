@@ -86,7 +86,7 @@ const AboutCompany = () => {
             className="goal__icons-container"
             style={{
               height: 200,
-              width: 700,
+              width: 900,
               display: "flex",
               justifyContent: "space-between",
             }}

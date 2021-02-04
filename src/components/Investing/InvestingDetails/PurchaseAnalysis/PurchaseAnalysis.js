@@ -22,7 +22,7 @@ const PurchaseAnalysis = () => {
         <div className="purchase-analysis__big-box">
           <CarouselProvider
             naturalSlideWidth={100}
-            naturalSlideHeight={150}
+            naturalSlideHeight={200}
             totalSlides={3}
           >
             <div>

@@ -22,11 +22,16 @@
     font-size: 15px
 
   &__element
-    padding: 20px 50px 0px 20px
     height: 218px
     background: #FFFFFF
-    
-    
+    @media(min-width: 1200px)
+      padding: 20px 20px 0px 20px
+      width: 280px
+      height: 218px
+    @media(min-width: 1920px)
+      padding: 20px 20px 0px 20px
+      width: 280px
+      height: 218px
 
     &_pic
       position: absolute
@@ -36,11 +41,13 @@
         width: 218px
         height: 184px
       @media(min-width: 1200px)
-        width: 180px
-        height: 176px
+        width: 200px
+        height: 180px
       @media(min-width: 1920px)
-        width: 204px
-        height: 176px
+        margin-left: 10px
+        padding-top: 20px
+        width: 300px
+        height: 280px
 
   &__box-shadow
     box-shadow: 0px 7px 20px #0F143129
@@ -57,10 +64,12 @@
       background: #FFFFFF
       display: flex
       justify-content: space-around
-      width: 650px
+      height: 230px
+      width: 715px
     @media(min-width: 1920px)
       background: #FFFFFF
       display: flex
       justify-content: space-around
       margin-left: 75px
-      width: 740px
+      height: 350px
+      width: 1070px

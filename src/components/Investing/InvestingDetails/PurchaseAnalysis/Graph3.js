@@ -74,7 +74,7 @@ const Graph3 = ({ stopSpinner }) => {
   };
 
   return (
-    <div style={{ padding: "30px 20px 20px 20px" }}>
+    <div style={{ padding: "56px 20px 20px 20px" }}>
       <Bar data={data} id="firstGraph" options={options} />
     </div>
   );
