@@ -38,31 +38,6 @@ const allObjects = [
 const Investing = () => {
   const [isModalOpen, setModalOpen] = useState(false);
 
-  window.addEventListener("scroll", () => {
-    const scrollPos = window.scrollY;
-    const navbar = document.querySelector("nav");
-    const navbarHeight = navbar.offsetHeight;
-
-    if (scrollPos >= navbarHeight) {
-      const footer = document.querySelector(".footer");
-      footer.classList.add("footer-animation");
-    }
-  });
-
-  const bellBlock = document.querySelector(".investing__notify");
-  const bellPic = document.querySelector(".investing__bell");
-  const bellTitle = document.querySelector(".investing__notify-title");
-
-  const ringTheBell = () => {
-    bellPic.classList.add("investing__bell-hover");
-    bellTitle.classList.add("investing__notify-title-hover");
-  };
-
-  const stopTheBell = () => {
-    bellPic.classList.remove("investing__bell-hover");
-    bellTitle.classList.remove("investing__notify-title-hover");
-  };
-
   const openNotifyModal = () => {
     console.log("notify");
     setModalOpen(true);
@@ -74,12 +49,7 @@ const Investing = () => {
         <div className="row investing-container__first-row">
           <div className="col investing__title-col">
             <p className="investing__title">신규 투자 상품</p>
-            <div
-              className="investing__notify"
-              onMouseOver={ringTheBell}
-              onMouseOut={stopTheBell}
-              onClick={openNotifyModal}
-            >
+            <div className="investing__notify" onClick={openNotifyModal}>
               <img src={bell} alt="bell" className="investing__bell" />
               <p className="investing__notify-title">투자 알림</p>
             </div>

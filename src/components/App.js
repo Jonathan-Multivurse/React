@@ -63,7 +63,7 @@ const App = () => {
       .catch((err) => {
         console.warn("Error occured", err);
       });
-  }, []);
+  });
 
   const changeNav = () => {
     if (window.innerWidth >= 768 && window.innerWidth <= 991) {
