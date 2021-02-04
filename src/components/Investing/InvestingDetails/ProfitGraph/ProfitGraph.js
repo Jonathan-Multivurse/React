@@ -1,7 +1,7 @@
 import React from "react";
 import "./ProfitGraph.sass";
 import arrowUp from "./../../../../assets/icons/arrow-up.png";
-import profitGraph from "./../../../../assets/icons/profit-graph.png";
+import BarGraph from "./BarGraph";
 
 const ProfitGraph = () => {
   return (
@@ -20,12 +20,8 @@ const ProfitGraph = () => {
             />
           </span>
         </div>
-        <div className="row profit-graph">
-          <img
-            src={profitGraph}
-            alt="profit graph"
-            className="profit-graph__img"
-          />
+        <div className="profit-graph__bargraph">
+          <BarGraph />
         </div>
       </div>
     </div>

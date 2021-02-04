@@ -1,5 +1,6 @@
 import React from "react";
 import GraphOne from "./../../../../assets/icons/PurchaseAnalysis/graph-1.png";
+import "./PurchaseAnalysis.sass";
 
 const Graph1 = () => {
   return (
