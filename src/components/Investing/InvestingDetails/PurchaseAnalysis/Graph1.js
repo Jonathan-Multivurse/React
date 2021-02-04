@@ -1,82 +1,12 @@
 import React from "react";
-import { HorizontalBar } from "react-chartjs-2";
-import { connect } from "react-redux";
+import GraphOne from "./../../../../assets/icons/PurchaseAnalysis/graph-1.png";
 
-export const mapStateToProps = (state) => {
-  return {
-    stopSpinner: state.stopSpinner,
-  };
-};
-
-const Graph1 = ({ stopSpinner }) => {
-  let barBackground;
-  if (stopSpinner) {
-    let context = document.getElementById("firstGraph");
-    if (context) {
-      let gradient = context.getContext("2d");
-      barBackground = gradient.createLinearGradient(150, 200, 80, 0);
-      barBackground.addColorStop(0, "#43cbff");
-      barBackground.addColorStop(1, "#3769fc");
-    }
-  }
-
-  const dataHorBar = {
-    labels: ["독일", "영국", "프랑스", "네덜란드", "폴란드"],
-    datasets: [
-      {
-        backgroundColor: barBackground,
-        data: [8.5, 6.75, 6.2, 4.6, 2.3],
-        maxBarThickness: 17,
-      },
-    ],
-  };
-
-  const options = {
-    legend: {
-      display: false,
-    },
-    scales: {
-      xAxes: [
-        {
-          gridLines: {
-            display: false,
-          },
-          ticks: {
-            userCallback(value) {
-              if (!(value % 2)) {
-                return value;
-              }
-            },
-            beginAtZero: true,
-          },
-        },
-      ],
-
-      yAxes: [
-        {
-          gridLines: {
-            display: true,
-          },
-        },
-      ],
-    },
-    tooltips: {
-      enabled: true,
-      mode: "index",
-      intersect: true,
-    },
-    plugins: {
-      datalabels: {
-        display: false,
-      },
-    },
-  };
-
+const Graph1 = () => {
   return (
-    <div style={{ padding: "56px 20px 20px 20px" }}>
-      <HorizontalBar data={dataHorBar} id="firstGraph" options={options} />
+    <div style={{ padding: "0px 0px 0px 0px" }}>
+      <img src={GraphOne} alt="graph" className="graph-one" />
     </div>
   );
 };
 
-export default connect(mapStateToProps, null)(Graph1);
+export default Graph1;

@@ -1,7 +1,6 @@
 import React from "react";
 import "./RiskDetails.sass";
 import { Grid } from "@material-ui/core";
-import Paper from "@material-ui/core/Paper";
 import sharp from "./../../../../assets/icons/InvestingDetails/sharp.png";
 import blur from "./../../../../assets/icons/InvestingDetails/blur.png";
 import Box from "@material-ui/core/Box";
@@ -17,7 +16,7 @@ const RiskDetails = () => {
           direction="row"
           className="risk-details__cards-container"
         >
-          <Paper elevation={3} className="risk-details__card">
+          <div elevation={3} className="risk-details__card">
             <Grid
               item
               direction="column"
@@ -44,8 +43,8 @@ const RiskDetails = () => {
                 Document Download
               </div>
             </Grid>
-          </Paper>
-          <Paper elevation={3} className="risk-details__card">
+          </div>
+          <div elevation={3} className="risk-details__card">
             <Grid
               item
               direction="column"
@@ -64,7 +63,7 @@ const RiskDetails = () => {
               <Box
                 borderBottom={1}
                 style={{
-                  color: "#3769fc",
+                  color: "#bfbfbf",
                   width: 150,
                   paddingTop: 5,
                   paddingBottom: 5,
@@ -74,8 +73,8 @@ const RiskDetails = () => {
                 Document Download
               </div>
             </Grid>
-          </Paper>
-          <Paper elevation={3} className="risk-details__card">
+          </div>
+          <div className="risk-details__card">
             <Grid
               item
               direction="column"
@@ -92,7 +91,7 @@ const RiskDetails = () => {
               <Box
                 borderBottom={1}
                 style={{
-                  color: "#3769fc",
+                  color: "#bfbfbf",
                   width: 150,
                   paddingTop: 5,
                   paddingBottom: 5,
@@ -102,25 +101,8 @@ const RiskDetails = () => {
                 Document Download
               </div>
             </Grid>
-          </Paper>
+          </div>
         </Grid>
-        {/*
-        <div className="row no-gutters risk-details__row">
-          <div className="col-6 col-lg-4 d-flex">
-            <img src={detailFirst} alt="detail" className="risk-details__pic" />
-          </div>
-          <div className="col-6 col-lg-4  d-flex">
-            <img
-              src={detailSecond}
-              alt="detail"
-              className="risk-details__pic"
-            />
-          </div>
-          <div className="col-6 col-lg-4 d-flex">
-            <img src={detailThird} alt="detail" className="risk-details__pic" />
-          </div>
-        </div>
-        */}
       </div>
     </div>
   );

@@ -28,22 +28,28 @@ const PurchaseAnalysis = () => {
             <div>
               <Slider className="purchase-analysis__slider">
                 <Slide index={0}>
-                  <span className="purchase-analysis__title purchase-analysis__title-first ">
-                    유럽 최대의 물류센터 투자 시장
-                  </span>
+                  <div style={{ zIndex: 0, position: "relative" }}>
+                    <span className="purchase-analysis__title purchase-analysis__title-first ">
+                      유럽 최대의 물류센터 투자 시장
+                    </span>
+                  </div>
                   <Graph1 />
                 </Slide>
                 <Slide index={1}>
-                  <span className="purchase-analysis__title">
-                    독일의 5대 물류센터 투자 시장
-                  </span>
+                  <div style={{ zIndex: 0, position: "relative" }}>
+                    <span className="purchase-analysis__title">
+                      독일의 5대 물류센터 투자 시장
+                    </span>
+                  </div>
 
                   <Graph2 />
                 </Slide>
                 <Slide index={2}>
-                  <span className="purchase-analysis__title">
-                    뒤셀도르프 시장 분석 (공급 시장)
-                  </span>
+                  <div style={{ zIndex: 0, position: "relative" }}>
+                    <span className="purchase-analysis__title">
+                      뒤셀도르프 시장 분석 (공급 시장)
+                    </span>
+                  </div>
                   <Graph3 />
                 </Slide>
               </Slider>

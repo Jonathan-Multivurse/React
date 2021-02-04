@@ -1,83 +1,13 @@
 import React from "react";
-import { Bar } from "react-chartjs-2";
-import { connect } from "react-redux";
-import "chartjs-plugin-datalabels";
+import GraphThree from "./../../../../assets/icons/PurchaseAnalysis/graph-3.png";
+import "./PurchaseAnalysis.sass";
 
-export const mapStateToProps = (state) => {
-  return {
-    stopSpinner: state.stopSpinner,
-  };
-};
-
-const Graph3 = ({ stopSpinner }) => {
-  let barBackground;
-  if (stopSpinner) {
-    let context = document.getElementById("firstGraph");
-    if (context) {
-      let gradient = context.getContext("2d");
-      barBackground = gradient.createLinearGradient(0, 0, 50, 300);
-      barBackground.addColorStop(0, "#43cbff");
-      barBackground.addColorStop(1, "#3769fc");
-    }
-  }
-
-  const data = {
-    labels: ["15", "16", "17", "18", "19"],
-    datasets: [
-      {
-        backgroundColor: barBackground,
-        data: [341, 280, 452, 280, 157],
-        maxBarThickness: 17,
-      },
-    ],
-  };
-
-  const options = {
-    legend: {
-      display: false,
-    },
-    scales: {
-      xAxes: [
-        {
-          gridLines: {
-            display: false,
-          },
-        },
-      ],
-
-      yAxes: [
-        {
-          gridLines: {
-            display: true,
-          },
-          ticks: {
-            beginAtZero: true,
-            stepSize: 100,
-          },
-        },
-      ],
-    },
-    tooltips: {
-      enabled: true,
-      mode: "index",
-      intersect: true,
-    },
-    plugins: {
-      datalabels: {
-        display: true,
-        color: "black",
-        anchor: "end",
-        align: "top",
-        offset: -1,
-      },
-    },
-  };
-
+const Graph3 = () => {
   return (
-    <div style={{ padding: "56px 20px 20px 20px" }}>
-      <Bar data={data} id="firstGraph" options={options} />
+    <div style={{ padding: "0px 0px 0px 0px" }}>
+      <img src={GraphThree} alt="graph" className="graph-three" />
     </div>
   );
 };
 
-export default connect(mapStateToProps, null)(Graph3);
+export default Graph3;
