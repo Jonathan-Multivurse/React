@@ -57,6 +57,9 @@ const BarGraph = () => {
           ticks: {
             beginAtZero: true,
             stepSize: 3,
+            callback: function (value) {
+              return value + "%";
+            },
           },
         },
       ],
