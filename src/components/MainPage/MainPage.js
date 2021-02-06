@@ -96,7 +96,6 @@ const MainPage = () => {
       </div>
       <div className="how-to">
         <div className="how-to__container">
-          <p className="how-to__title">How to</p>
           <p className="how-to__subtitle">
             왜 상업용 부동산인가?
             <br />

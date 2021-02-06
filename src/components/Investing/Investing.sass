@@ -1,25 +1,24 @@
-body
-  background: #F6F8FF
-
 .investing
   &-container
     background: #F6F8FF
-    height: 100%
-    width: 100%
     display: grid
     justify-content: center
-    @media(max-width: 575px)
-      padding: 30px 5px
+    overflow-x: hidden
+    height: 90vh
+    width: 100vw
+    @media(max-width: 375px)
+
     @media(min-width: 576px)
-      padding: 50px 0px
+
     @media(min-width: 768px)
-      padding: 156px 0px
+
     @media(min-width: 1920px)
-      padding: 234px 0px
 
     &__first-row
       display: flex
       justify-content: center
+      margin-top: 50px
+      @media(min-width: 768px)
 
   &__title
     color: #2E2E2E
@@ -33,16 +32,15 @@ body
         justify-content: space-between
         align-items: center
         width: 250px
+        margin-bottom: 30px
       @media(min-width: 576px)
         display: flex
         justify-content: space-between
         align-items: center
         width: 506px
       @media(min-width: 768px)
-        margin-bottom: 20px
-        padding: 0
+
       @media(min-width: 1920px)
-        margin-bottom: 30px
 
   &__notify
     display: flex
@@ -66,18 +64,18 @@ body
     &:hover
       transform: rotate(-45deg)
       transition: 0.1s
-
     @media(min-width: 1920px)
       width: 46px
       height: 43px
 
   &__row
-    margin: 20px 0px 20px 0px
+    margin-bottom: 50px
     justify-content: space-between
     @media(max-width: 575px)
       justify-content: center
       width: 300px
     @media(min-width: 992px)
+      margin: 0px 0px 0px 0px
       width: 100%
 
     &-container

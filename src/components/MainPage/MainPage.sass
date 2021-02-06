@@ -422,7 +422,6 @@
     display: flex
     justify-content: center
     @media(max-width: 575px)
-      width: 100%
       justify-content: flex-end
     @media(max-width: 575px)
 
@@ -432,7 +431,7 @@
   background: white
   @media(max-width: 575px)
     height: 100%
-    padding: 20px 20px 0px 20px
+    padding: 20px 10px 0px 20px
   @media(min-width: 576px)
     display: grid
     align-content: space-between
@@ -447,7 +446,7 @@
 
   &__phone
     @media(max-width: 575px)
-      width: 200px
+      width: 235px
       z-index: 1
     @media(min-width: 576px)
       width: 240px
@@ -467,10 +466,13 @@
       z-index: 1
       background-image: url("./../../assets/icons/MainPage/arrow.png")
       background-repeat: no-repeat
-
       @media(max-width: 575px)
-        width: 100%
+        display: flex
         justify-content: flex-end
+        padding-left: 90px
+        padding-right: 10px
+        background-position: 50px 120px
+        background-size: 300px
       @media(min-width: 768px)
         padding-left: 100px
         padding-right: 115px

@@ -1,8 +1,8 @@
 import React from "react";
 import "./AboutCompany.sass";
 import aboutCompany from "./../../assets/icons/AboutCompany/about-company.jpg";
-import beRichFirstGraph from "./../../assets/icons/AboutCompany/rich-1.png";
-import beRichSecondGraph from "./../../assets/icons/AboutCompany/rich-2.png";
+import beRichFirstGraph from "./../../assets/icons/AboutCompany/beRich1.png";
+import beRichSecondGraph from "./../../assets/icons/AboutCompany/beRich2.png";
 import arrow from "./../../assets/icons/arrow-up.png";
 import compass from "./../../assets/icons/AboutCompany/compass.png";
 import money from "./../../assets/icons/AboutCompany/money.png";
@@ -13,7 +13,7 @@ import { Grid } from "@material-ui/core";
 import Box from "@material-ui/core/Box";
 const AboutCompany = () => {
   return (
-    <>
+    <div className="wrapper">
       <div className="about-company">
         <img
           src={aboutCompany}
@@ -38,29 +38,37 @@ const AboutCompany = () => {
         <div className="be-rich__container">
           <p className="be-rich__title">나도 부자가 되고싶다.</p>
           <div className="be-rich__graphs">
-            <div
-              className="be-rich__contained1"
-              style={{ position: "relative" }}
-            >
-              <img
-                src={beRichFirstGraph}
-                alt="be rich graph"
-                className="be-rich__col"
-              />
-              <p className="be-rich__imagetext1">점점 벌어지는 소득 격차</p>
-            </div>
-            <div
-              className="be-rich__contained2"
-              style={{ position: "relative" }}
-            >
-              <img
-                src={beRichSecondGraph}
-                alt="be rich graph"
-                className="be-rich__col"
-              />
-              <p className="be-rich__imagetext2">
-                낮은 금융소득으로는 부자가 될 수 없다
-              </p>
+            <div className="be-rich__graphs-wrapper">
+              <div className="be-rich__content-wrapper">
+                <div
+                  className="be-rich__text-content1"
+                  style={{ color: "#7a7a7a" }}
+                >
+                  점점 벌어지는 소득 격차
+                </div>
+                <div className="be-rich__image-container1">
+                  <img
+                    src={beRichFirstGraph}
+                    alt="rich"
+                    className="be-rich__image"
+                  />
+                </div>
+              </div>
+              <div className="be-rich__content-wrapper">
+                <div
+                  className="be-rich__text-content2"
+                  style={{ color: "#7a7a7a" }}
+                >
+                  낮은 금융소득으로는 부자가 될 수 없다
+                </div>
+                <div className="be-rich__image-container2">
+                  <img
+                    src={beRichSecondGraph}
+                    alt="rich"
+                    className="be-rich__image"
+                  />
+                </div>
+              </div>
             </div>
           </div>
           <p className="be-rich__subtitle">
@@ -144,7 +152,7 @@ const AboutCompany = () => {
         </div>
       </div>
       <Footer mode="dark" />
-    </>
+    </div>
   );
 };
 

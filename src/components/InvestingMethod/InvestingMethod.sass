@@ -1,10 +1,11 @@
+
 .investing-method
   width: 100%
   height: 100%
   background-color: #F6F8FF
   padding: 85px 215px
   @media(max-width: 575px)
-    padding: 40px 40px
+    padding: 15px 15px
     display: block
   @media(min-width: 576px)
     padding: 45px 70px
@@ -20,6 +21,7 @@
     display: flex
     width: 100%
     justify-content: center
+    overflow-x: hidden
 
     span
       display: grid
@@ -29,6 +31,9 @@
       width: 100%
       padding-top: 35px
       padding-bottom: 80px
+      @media(max-width: 500px)
+        border-bottom: 2px solid #FFFFFF
+        padding-bottom: 8px
       @media(min-width: 768px)
         width: 770px
       @media(min-width: 1920px)
@@ -41,6 +46,8 @@
         font-size: 30px
         font-family: "NanumSquareRegular"
         color: #555555
+        @media(max-width: 500px)
+          font-size: 22px
 
   &__main-pic
     width: 68%
@@ -66,8 +73,8 @@
       @media(min-width: 1920px)
         margin-left: 0px
     @media(max-width: 575px)
-      display: grid
-      justify-content: center
+      height: 150px
+      margin-bottom: 40px
     @media(min-width: 768px)
       display: flex
       justify-content: center
@@ -78,6 +85,9 @@
 
   &__full-img
     width: 80%
+    @media(max-width: 575px)
+      margin-top: 15px
+      width: 68%
     @media(min-width: 1200px)
     @media(min-width: 1920px)
       width: 910px
@@ -85,6 +95,9 @@
 
   &__left-icon
     margin-right: 40px
+    @media(max-width: 575px)
+      height: 80px
+      margin-right: 20px
     @media(min-width: 1920px)
       margin-right: 86px
       width: 317px
@@ -93,7 +106,8 @@
   &__right-icon
     margin-left: 40px
     @media(max-width: 575px)
-      margin-bottom: 24px
+      height: 80px
+      margin-left: 20px
     @media(min-width: 1920px)
       margin-left: 86px
       width: 317px
@@ -106,7 +120,6 @@
   &__number-left
     @media(max-width: 575px)
       margin-left: 0
-      margin-right: 39px
     @media(min-width: 576px)
       margin-left: 0
     @media(min-width: 865px)
@@ -124,6 +137,11 @@
     color: #FFFFFF
     font-size: 16px
     font-family: "NanumSquareRegular"
+    @media(max-width: 560px)
+      width: 120px
+      height: 36px
+      border-radius: 8px
+      font-size: 12px
     @media(min-width: 1920px)
       width: 255px
       height: 66px
@@ -131,10 +149,10 @@
       font-size: 24px
 
     &-right
-      @media(max-width: 575px)
+      @media(max-width: 560px)
         position: relative
-        left: 0
-        bottom: 27px
+        left: 108px
+        bottom: 20px
       @media(min-width: 768px)
         position: relative
         top: 125px
@@ -149,16 +167,16 @@
         right: 125px
 
       &-container
-        @media(min-width: 576px)
+        @media(max-width: 560px)
           display: flex
-          justify-content: flex-end
-          margin-bottom: 25px
         @media(min-width: 768px)
           display: none
 
     &-left
-      @media(max-width: 575px)
-        margin-bottom: 20px
+      @media(max-width: 560px)
+        position: relative
+        right: 108px
+        bottom: 18px
       @media(min-width: 768px)
         position: relative
         top: 131px
@@ -173,10 +191,10 @@
         left: 160px
 
     &-last
-      @media(max-width: 575px)
+      @media(max-width: 560px)
         position: relative
-        bottom: 68px
-        right: 49px
+        left: 108px
+        bottom: 20px
       @media(min-width: 576px)
         position: relative
         bottom: 87px
@@ -196,7 +214,7 @@
       display: flex
       justify-content: flex-end
       @media(min-width: 576px)
-        margin-bottom: 25px
+        margin-bottom: 0px
       @media(min-width: 768px)
         margin-bottom: 0
         display: none
@@ -204,9 +222,9 @@
   &__text
     &-rightcontainer
       position: absolute
-      @media(max-width: 459px)
-        bottom: 306px
-        right: 0
+      @media(max-width: 560px)
+        top: 12px
+        right: 110px
       @media(min-width: 460px)
         bottom: 328px
         right: 0
@@ -223,9 +241,9 @@
       color: #0154C8
       text-align: end
       font-family: "JavaneseText"
-      @media(max-width: 459px)
-        font-size: 9px
-        margin-bottom: 7px
+      @media(max-width:  560px)
+        font-size: 12px
+        margin-bottom: 0px
       @media(min-width: 460px)
         font-size: 12px
         margin-bottom: 7px
@@ -244,8 +262,8 @@
       color: #555555
       text-align: end
       @media(max-width: 459px)
-        font-size: 13px
-        margin-bottom: 6px
+        font-size: 12px
+        margin-bottom: 5px
       @media(min-width: 460px)
         font-size: 15px
         margin-bottom: 8px
@@ -262,8 +280,8 @@
       color: #555555
       font-family: "NanumSquareLight"
       text-align: end
-      @media(max-width: 459px)
-        font-size: 12px
+      @media(max-width: 560px)
+        font-size: 10px
       @media(min-width: 460px)
         font-size: 14px
       @media(min-width: 503px)
@@ -275,9 +293,9 @@
       position: absolute
       width: 300px
       height: 150px
-      @media(max-width: 459px)
-        bottom: 306px
-        right: 0
+      @media(max-width: 560px)
+        top: 16px
+        left: 108px
       @media(min-width: 460px)
         bottom: 328px
         right: 0
@@ -295,9 +313,9 @@
       color: #0154C8
       text-align: start
       font-family: "JavaneseText"
-      @media(max-width: 459px)
-        font-size: 9px
-        margin-bottom: 7px
+      @media(max-width: 560px)
+        font-size: 12px
+        margin-bottom: 0px
       @media(min-width: 460px)
         font-size: 12px
         margin-bottom: 7px
@@ -316,9 +334,9 @@
     &-leftsubtitle
       color: #555555
       text-align: start
-      @media(max-width: 459px)
-        font-size: 13px
-        margin-bottom: 6px
+      @media(max-width: 560px)
+        font-size: 12px
+        margin-bottom: 5px
       @media(min-width: 460px)
         font-size: 15px
         margin-bottom: 8px
@@ -335,8 +353,8 @@
       color: #555555
       font-family: "NanumSquareLight"
       text-align: start
-      @media(max-width: 459px)
-        font-size: 12px
+      @media(max-width: 560px)
+        font-size: 10px
       @media(min-width: 460px)
         font-size: 14px
       @media(min-width: 503px)
