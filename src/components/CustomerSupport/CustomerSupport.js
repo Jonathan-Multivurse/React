@@ -33,9 +33,11 @@ const AccordionSummary = withStyles({
     boxShadow: 3,
     marginBottom: -1,
     minHeight: 56,
+
     "&$expanded": {
       minHeight: 56,
       boxShadow: "0px 5px 20px #9DADDE66",
+      background: "#f5f5f5",
     },
   },
   content: {},
@@ -66,9 +68,6 @@ function CustomizedAccordions() {
           aria-controls="panel1d-content"
           id="panel1d-header"
           expandIcon={<ExpandMoreIcon />}
-          style={{
-            background: "#f5f5f5",
-          }}
         >
           <Typography
             className="customer-support__block-title"
@@ -92,7 +91,6 @@ function CustomizedAccordions() {
           aria-controls="panel2d-content"
           id="panel2d-header"
           expandIcon={<ExpandMoreIcon />}
-          style={{ background: "#f5f5f5" }}
         >
           <Typography className="customer-support__block-title">
             Q. REAL BUY는 어떤 서비스인가요?
@@ -113,7 +111,6 @@ function CustomizedAccordions() {
           aria-controls="panel3d-content"
           id="panel3d-header"
           expandIcon={<ExpandMoreIcon />}
-          style={{ background: "#f5f5f5" }}
         >
           <Typography className="customer-support__block-title">
             Q. REAL BUY는 어떠한 투자를 하나요?

@@ -7,7 +7,7 @@ import arrow from "./../../assets/icons/arrow-up.png";
 import compass from "./../../assets/icons/AboutCompany/compass.png";
 import money from "./../../assets/icons/AboutCompany/money.png";
 import umbrella from "./../../assets/icons/AboutCompany/umbrella.png";
-import platform from "./../../assets/icons/AboutCompany/platform.svg";
+import platform from "./../../assets/icons/AboutCompany/platform.png";
 import Footer from "./../Footer/Footer";
 import { Grid } from "@material-ui/core";
 import Box from "@material-ui/core/Box";
