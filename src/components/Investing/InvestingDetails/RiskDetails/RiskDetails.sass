@@ -30,6 +30,8 @@
     color: #555555
     font-size: 22px
     text-align: center
+    @media(max-width: 575px)
+      font-size: 18px
     @media(min-width: 1920px)
       font-size: 33px
 
@@ -43,6 +45,11 @@
     display: flex
     margin-top: 50px
     justify-content: space-between
+
+    @media(max-width: 575px)
+      display: flex
+      justify-content: center
+
     @media(min-width: 1920px)
       width: 600px
   &__card

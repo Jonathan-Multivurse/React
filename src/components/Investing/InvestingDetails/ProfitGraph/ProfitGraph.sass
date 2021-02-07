@@ -14,11 +14,11 @@
     background-color: white
     display: flex
     justify-content: center
-    @media(max-width: 530px)
+    @media(max-width: 575px)
       padding: 47px 10px 58px 10px
-      height: 337px
-    @media(min-width: 531px)
-      height: 334px
+      height: 450px
+    @media(min-width: 576px)
+      height: 450px
       padding: 47px 10px 58px 10px
     @media(min-width: 576px)
       height: 100%
@@ -26,15 +26,18 @@
 
   &__box
     width: 772px
-    height: 522px
+    height: 422px
     background: #FFFFFF
     box-shadow: 1px 1px 32px #448AFF1F
     border: 1px solid #448AFF1F
     border-radius: 4px
-    @media(max-width: 575px)
-      height: 230px
+    @media(max-width: 530px)
+      height: 350px
       width: 468px
     @media(min-width: 576px)
+      width: 770px
+      height: 522px
+    @media(min-width: 775px)
       width: 770px
       height: 522px
     @media(min-width: 1920px)
@@ -45,7 +48,7 @@
     display: grid
     margin: 43px 45px
     @media(max-width: 575px)
-      margin: 20px 28px
+      margin: 20px 75px
     @media(min-width: 1920px)
       margin: 30px 42px
 
@@ -92,5 +95,7 @@
   &__bargraph
     display: flex
     justify-content: center
+    @media(min-width: 560px)
+
     @media(min-width: 1920px)
       margin-top: 75px

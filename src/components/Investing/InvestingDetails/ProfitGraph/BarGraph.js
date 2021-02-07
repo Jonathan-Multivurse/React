@@ -80,14 +80,35 @@ const BarGraph = () => {
     },
   };
 
+  let width = window.innerWidth;
+  let height = window.innerHeight;
+
+  const myWidth = () => {
+    if (width >= 800 && width < 1920) {
+      return 700;
+    } else if (width < 800 && width > 500) {
+      return 500;
+    } else if (width < 500) {
+      return 325;
+    }
+  };
+
+  const myHeight = () => {
+    if (width >= 800) {
+      return 300;
+    } else if (width < 800) {
+      return 200;
+    }
+  };
+
   return (
     <div style={{ padding: "0px 0px 0px 0px" }}>
       <Bar
         data={data}
         id="firstGraph"
         options={options}
-        width={700}
-        height={300}
+        width={myWidth()}
+        height={myHeight()}
       />
     </div>
   );

@@ -148,7 +148,7 @@ const InvestingDetails = () => {
   });
 
   return (
-    <>
+    <div className="container">
       <PresentationBlock />
       <QuickInvest />
       <Points />
@@ -180,7 +180,7 @@ const InvestingDetails = () => {
       <AssetManagement />
       <Precautions />
       <Footer mode={"dark"} />
-    </>
+    </div>
   );
 };
 

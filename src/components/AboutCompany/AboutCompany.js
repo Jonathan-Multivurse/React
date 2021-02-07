@@ -71,11 +71,11 @@ const AboutCompany = () => {
               </div>
             </div>
           </div>
-          <p className="be-rich__subtitle">
+          <div className="be-rich__subtitle">
             근로 소득만으로 아파트 가격 상승률을 따라가기 힘든 시기입니다. (근로
             소득 &lt; 자본 소득) 저성장 기조가 장기화되면서 낮은 금융 소득으로
             부자가 될 수 없습니다.
-          </p>
+          </div>
           <div className="be-rich__inline">
             <p className="be-rich__text">벌어지는 소득격차의 해결방안</p>
             <img src={arrow} alt="arrow" className="be-rich__arrow" />
