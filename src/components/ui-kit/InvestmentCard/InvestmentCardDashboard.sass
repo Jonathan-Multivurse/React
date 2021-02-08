@@ -7,8 +7,10 @@
       transition: 0.5s
     @media(max-width: 575px)
       margin-top: 20px
+      display: flex
+      justify-content: center
     @media(min-width: 576px)
-      height: 243px
+      height: 343px
       margin-right: 12px
     @media(min-width: 1920px)
       width: auto
@@ -24,15 +26,13 @@
     height: 470px
     @media(max-width: 575px)
       width: 379px
+      max-height: 390px
     @media(min-width: 576px)
       max-width: 212px
       max-height: 340px
-    @media(min-width: 768px)
-      max-width: 192px
-      max-height: 320px
     @media(min-width: 992px)
       max-width: 192px
-      max-height: 310px
+      max-height: 340px
     @media(min-width: 1920px)
       max-height: 525px
       max-width: 315px
@@ -77,10 +77,12 @@
 
     &-picture
       width: 100%
-      @media(min-width: 700px)
-        height: 185px
+      @media(max-width: 575px)
+        height: 250px
+      @media(min-width: 576px)
+        height: 200px
       @media(min-width: 996px)
-        height: 165px
+        height: 200px
       @media(min-width: 1920px)
         height: 275px
 

@@ -1,7 +1,7 @@
 import React from "react";
 import "./MainPage.sass";
 import main from "./../../assets/icons/MainPage/main.jpg";
-import howTo from "./../../assets/icons/MainPage/how-to.svg";
+import howTo from "./../../assets/icons/MainPage/how-to.png";
 import phone from "./../../assets/icons/MainPage/phone.png";
 import phoneSecond from "./../../assets/icons/MainPage/phone-2.png";
 import customize from "./../../assets/icons/MainPage/customize.svg";

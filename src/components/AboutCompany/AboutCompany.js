@@ -88,17 +88,7 @@ const AboutCompany = () => {
       <div className="goal">
         <div className="goal__container">
           <div className="goal__pic-container">Real Buy 의 목표</div>
-          <Grid
-            container
-            direction="row"
-            className="goal__icons-container"
-            style={{
-              height: 200,
-              width: 900,
-              display: "flex",
-              justifyContent: "space-between",
-            }}
-          >
+          <Grid container className="goal__icons-container">
             <Grid item direction="column" className="goal__icons-subcontainer">
               <img src={umbrella} alt="umb" className="goal__icons-icon" />
               <div className="goal__icons-title">고객 이익 보호</div>
@@ -106,7 +96,7 @@ const AboutCompany = () => {
                 고객의 이익을 보호하기 위해 최선의 서비스 제공
               </div>
             </Grid>
-            <Box borderRight={2} style={{ color: "#676767" }} />
+
             <Grid item direction="column" className="goal__icons-subcontainer">
               <img src={money} alt="mon" className="goal__icons-icon" />
               <div className="goal__icons-title">금융 수익 증대</div>
@@ -114,8 +104,13 @@ const AboutCompany = () => {
                 안정적인 실물자산 투자를 통해 높은 금융소득을 제공
               </div>
             </Grid>
-            <Box borderRight={2} style={{ color: "#676767" }} />
-            <Grid item direction="column" className="goal__icons-subcontainer">
+
+            <Grid
+              item
+              direction="column"
+              className="goal__icons-subcontainer"
+              style={{ border: "none" }}
+            >
               <img src={compass} alt="com" className="goal__icons-icon" />
               <div className="goal__icons-title">투자 편의 확대</div>
               <div className="goal__icons-subtitle">

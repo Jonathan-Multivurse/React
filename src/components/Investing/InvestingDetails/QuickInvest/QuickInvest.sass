@@ -33,6 +33,8 @@
   &__pic-progress
     display: grid
     margin-top: -35px
+    @media(max-width: 575px)
+      justify-content: center
 
     &-img
       background-size: cover
@@ -44,8 +46,10 @@
         height: 231px
       @media(min-width: 576px)
         background-image: url("./../../../../assets/icons/InvestingDetails/quick-pic-medium.jpg")
+        width: 520px
       @media(min-width: 768px)
         background-image: url("./../../../../assets/icons/InvestingDetails/quick-pic-large.jpg")
+        width: 445px
       @media(min-width: 1920px)
         width: 667px
         height: 453px
@@ -81,6 +85,9 @@
         width: 327px
         margin-left: 7px
       @media(min-width: 576px)
+        width: 500px
+        margin-left: 8px
+      @media(min-width: 755px)
         width: 429px
         margin-left: 8px
       @media(min-width: 1920px)

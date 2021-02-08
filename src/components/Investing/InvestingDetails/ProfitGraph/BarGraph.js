@@ -81,7 +81,6 @@ const BarGraph = () => {
   };
 
   let width = window.innerWidth;
-  let height = window.innerHeight;
 
   const myWidth = () => {
     if (width >= 800 && width < 1920) {
@@ -90,6 +89,8 @@ const BarGraph = () => {
       return 500;
     } else if (width < 500) {
       return 325;
+    } else {
+      return 900;
     }
   };
 

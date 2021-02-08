@@ -4,6 +4,13 @@ import { makeStyles } from "@material-ui/core/styles";
 import { Link } from "react-router-dom";
 const useStyles = makeStyles((theme) => ({
   root: {
+    [theme.breakpoints.only("xs")]: {
+      backgroundColor: "transparent",
+      position: "absolute",
+      height: 15,
+      right: 12,
+      top: 14,
+    },
     [theme.breakpoints.up("sm")]: {
       backgroundColor: "transparent",
       position: "absolute",

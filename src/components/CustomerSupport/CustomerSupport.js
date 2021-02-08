@@ -8,6 +8,7 @@ import MuiAccordionDetails from "@material-ui/core/AccordionDetails";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import Footer from "./../Footer/Footer";
 import Typography from "@material-ui/core/Typography";
+import SupportMobileNav from "./../MobileVersion/SupportMobileNav/SupportMobileNav";
 
 const Accordion = withStyles({
   root: {
@@ -33,7 +34,6 @@ const AccordionSummary = withStyles({
     boxShadow: 3,
     marginBottom: -1,
     minHeight: 56,
-
     "&$expanded": {
       minHeight: 56,
       boxShadow: "0px 5px 20px #9DADDE66",
@@ -191,6 +191,9 @@ const CustomerSupport = () => {
 
           <div className="customer-support__links" style={{ height: 40 }}>
             {customerLinks}
+          </div>
+          <div className="visible-for-mobile">
+            <SupportMobileNav />
           </div>
 
           <div className="customer-support__block">

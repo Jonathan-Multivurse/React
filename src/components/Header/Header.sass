@@ -97,12 +97,17 @@
     &-transparent
       display: flex
       background-color: #f0f8ff00 !important
+      @media(max-width: 768px)
+        margin-top: 10px
+        margin-bottom: 10px
       a
         text-decoration: none
         font-family: "NanumSquare"
         font-weight: 400
         color: white !important
         font-size: 15px
+        @media(max-width: 768px)
+          color: #0540FF !important
         @media(min-width: 1920px)
           font-size: 21px
 
@@ -126,7 +131,6 @@
       justify-content: center
       background: white
       width: 100%
-
   &-logo
     @media(max-width: 767px)
       background-image: url("./../../assets/icons/small-blue-logo.svg")
@@ -289,6 +293,9 @@
   color: white
   font-size: 15px
   padding-right: 10px
+  @media(max-width: 768px)
+    color: #0540FF
+
   @media(min-width: 1920px)
     font-size: 21px
 
@@ -299,6 +306,8 @@
   padding: 8px 0px 0px 0px
   color: white
   font-size: 15px
+  @media(max-width: 768px)
+    color: #0540FF
   @media(min-width: 1920px)
     font-size: 21px
 

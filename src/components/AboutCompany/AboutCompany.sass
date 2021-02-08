@@ -355,10 +355,26 @@
   @media(min-width: 1920px)
     padding: 142px 0px
 
+  &__icons-container
+    display: flex
+    justify-content: space-between
+    @media(max-width: 610px)
+      flex-direction: column
+
   &__icons-subcontainer
     display: flex
     justify-content: center
     align-items: center
+    padding-left: 25px
+    padding-right: 25px
+    border-right: 2px solid #676767
+    @media(max-width: 610px)
+      flex-direction: column
+      border-right: none
+      padding-bottom: 40px
+    @media(max-width: 750px)
+      padding-left: 10px
+      padding-right: 10px
     @media(min-width: 1920px)
 
   &__icons-icon
